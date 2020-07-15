@@ -8,6 +8,9 @@ dist
 .rpt2_cache
 # dev
 dev.css
+index.css
+index.compat.css
+index.min.css
 # misc
 .DS_Store
 .env
