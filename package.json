@@ -1,0 +1,50 @@
+{
+  "name": "@egovernments/digit-ui.css",
+  "version": "1.0.0",
+  "description": "Made with create-ui-library",
+  "author": "abhinav-egov",
+  "license": "MIT",
+  "repository": "abhinav-egov/digit-ui.css",
+  "main": "index.css",
+  "engines": {
+    "node": ">=10"
+  },
+  "cssConfig": {
+    "prefix": ""
+  },
+  "scripts": {
+    "start": "npx postcss src/index.scss -o example/dev.css --no-map --env development -w",
+    "build": "npm-run-all raw prod compat",
+    "raw": "npx postcss src/index.scss -o index.css --no-map --env development",
+    "compat": "npx postcss src/index.scss -o index.compat.css --no-map --env compat",
+    "prod": "npx postcss src/index.scss -o index.min.css --no-map --env production",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "browserslist": [
+    "> 3%",
+    "last 2 versions"
+  ],
+  "style": "./index.css",
+  "dependencies": {
+    "autoprefixer": "^9.8.5",
+    "cssnano": "^4.1.10",
+    "normalize.css": "^8.0.1",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "postcss-header": "^2.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-prefixer": "^2.1.2",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "files": [
+    "index.compat.css",
+    "index.min.css",
+    "index.css",
+    "src/**/*.scss",
+    "src/**/*.css"
+  ]
+}
