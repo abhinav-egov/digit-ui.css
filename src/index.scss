@@ -6,6 +6,10 @@
 
 @import "tailwindcss/utilities";
 
+body{
+  @apply bg-bggrey
+}
+
 .hello-world {
   padding: 10px;
   color: green;
@@ -47,11 +51,46 @@
 }
 
 .card{
-  @apply bg-white m-sm p-sm
+  @apply bg-white m-sm p-sm shadow-card
 }
-.card-header{
 
+.card-header{
+  @apply text-headerblack text-h1 font-bold align-middle text-left
 }
+
 .card-text{
-  @apply text-grey
+  @apply text-grey text-cardtext align-middle text-left
+}
+
+.card-radio-wrap{
+  @apply my-sm block leading-10
+}
+
+.card-radio-btn-wrap{
+  @apply block float-left relative
+}
+
+.card-radio-btn{
+  @apply opacity-0 absolute cursor-pointer h-10 w-10
+}
+
+.card-radio-btn-checkmark{
+ @apply h-10 w-10 border-2 border-radioblack border-solid rounded-full block
+}
+
+.card-radio-label{
+  @apply text-label my-radiobtnx ml-radiobtnleft
+}
+
+
+.card-radio-btn-wrap:hover input ~ .card-radio-btn-checkmark {
+  @apply shadow-radiobtn rounded-full
+}
+
+.card-radio-btn-checkmark:after {
+  content: ''
+}
+
+.card-radio-btn-wrap input:checked ~ .card-radio-btn-checkmark:after {
+  @apply block bg-headerblack h-5 w-5 rounded-full absolute top-10 left-10
 }
