@@ -1,9 +1,57 @@
 @import 'normalize.css';
 
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
 .hello-world {
   padding: 10px;
   color: green;
   font-size: 2rem;
   text-align: center;
   font-family: sans-serif;
+}
+
+.navbar{
+  @apply text-white bg-gradient-to-r from-darkblue to-lightnavyblue p-md 
+}
+
+.navbar-header{
+  @apply text-navbarheader float-left px-sm
+}
+
+.navbar-subheader{
+  @apply font-light px-sm border-solid border-l border-white border-opacity-100
+}
+
+.h1{
+  @apply text-h1 mx-md font-bold
+}
+
+.link-label{
+  @apply text-lightblue text-a underline mx-md
+}
+
+.back-btn{
+  @apply mx-sm border-solid border-b border-black border-opacity-100 float-left
+}
+
+.back-btn-pointer{
+  @apply text-pointer align-middle
+}
+
+.back-btn-label{
+  @apply text-a
+}
+
+.card{
+  @apply bg-white m-sm p-sm
+}
+.card-header{
+
+}
+.card-text{
+  @apply text-grey
 }

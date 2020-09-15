@@ -20,7 +20,8 @@
     "prod": "npx postcss src/index.scss -o index.min.css --no-map --env production",
     "predeploy": "cd example && yarn install && yarn run build",
     "prepublish": "yarn build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "build-css": "tailwindcss build src/index.scss -o example/dev.css"
   },
   "browserslist": [
     "> 3%",
@@ -28,7 +29,8 @@
   ],
   "style": "./index.css",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "tailwindcss": "^1.8.10"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.5",
