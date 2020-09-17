@@ -1,0 +1,7 @@
+.card-textinput{
+    @apply mb-lg mt-sm block border-2 border-black border-solid w-full bg-white leading-10 font-roboto text-optionblack text-selectedoption
+}
+
+.card-textarea{
+    @apply block mt-md mb-lg border-2 border-black border-solid w-full bg-white h-24
+}

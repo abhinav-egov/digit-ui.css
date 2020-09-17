@@ -1,0 +1,43 @@
+.upload-wrap{
+    height: 150px;
+}
+
+.upload-wrap{
+    @apply bg-bannerwhite relative mb-lg px-sm
+}
+
+.upload-camera-img{
+    top: 54px;
+    left: calc( 50% - 23px );
+    height: 42px;
+    width: 46px;
+}
+
+.upload-camera-img{
+    @apply block absolute
+}
+
+.upload-camera-img-mini-wrap{
+    height: 100px;
+    width: 100px;
+    margin-top: 35px;
+}
+
+.upload-camera-img-mini-wrap{
+    @apply block float-left mr-6 relative bg-uploadgrey
+}
+
+.upload-img-mini{
+    height: 100px
+}
+
+.upload-camera-img-mini{
+    height: 28px;
+    width: 30.67px;
+    top: 35.33px;
+    left: 34px;
+}
+
+.upload-camera-img-mini{
+    @apply absolute
+}

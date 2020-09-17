@@ -1,0 +1,23 @@
+.complaintnumber-wrap{
+    @apply block bg-green w-full text-center text-white pt-md pb-xl mb-22
+}
+
+.complaintnumber-header{
+    @apply block pb-md font-roboto font-bold text-2833
+}
+
+.complaintnumber-label{
+    @apply block py-sm font-roboto font-bold text-1821
+}
+
+.complaintnumber-text{
+    @apply font-bold text-2024
+}
+
+.complainterror-wrap{
+    @apply block bg-red w-full text-center text-white pt-md pb-27 mb-22
+}
+
+.complainterror-header{
+    @apply block pb-md font-roboto font-bold text-2833
+}

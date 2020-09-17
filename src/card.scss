@@ -1,0 +1,23 @@
+.card{
+    @apply bg-white m-sm p-sm shadow-card
+}
+
+.card-selected-label{
+    @apply text-selectedlabel font-medium text-headerblack
+}
+
+.card-header{
+    @apply text-headerblack text-h1 font-bold align-middle text-left
+}
+
+.card-text{
+    @apply text-grey text-cardtext align-middle text-left
+}
+
+.submit-bar{
+    @apply h-10 bg-orange text-center border-b-2 border-darkgreen border-solid 
+}
+  
+.submit-header{
+    @apply text-label text-white font-regular leading-10
+}

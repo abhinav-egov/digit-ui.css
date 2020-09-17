@@ -1,0 +1,16 @@
+.card-select-wrap{
+  
+}
+
+.card-select-label{
+  @apply text-label font-bold font-roboto
+}
+
+.card-select-dropdown{
+  @apply block border-2 border-black border-solid w-full bg-white mb-lg mt-sm leading-10 font-roboto text-optionblack text-selectedoption
+}
+
+.card-select-dropdown-option{
+  @apply font-roboto font-regular text-optionblack text-selectedoption align-top text-left 
+}
+

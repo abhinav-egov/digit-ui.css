@@ -1,0 +1,21 @@
+
+.h1{
+    @apply text-h1 mx-md font-bold
+  }
+  
+.link-label{
+    @apply text-lightblue text-a underline mx-md
+}
+
+.back-btn{
+    @apply mx-sm border-solid border-b border-black border-opacity-100 float-left
+}
+
+.back-btn-pointer{
+    @apply text-pointer align-middle
+}
+
+.back-btn-label{
+    @apply text-a
+}
+  
