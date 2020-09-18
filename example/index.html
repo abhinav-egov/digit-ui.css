@@ -3,6 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <title>@egovernments/digit-ui.css</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdKOqX6EPEX9djPm-vL_8zv0HBF8z0Qjg&callback=initMap&libraries=&v=weekly"
+      defer >
+      </script>
+      <script>
+        "use strict";
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: {
+            lat: -34.397,
+            lng: 150.644
+          },
+          zoom: 8
+        });
+      }
+    </script>
+       
     <link href="dev.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -117,46 +136,87 @@
       <div class="complaint-sum-card">
         <header class="complaint-sum-header">Burning of Garbage</header>
         <div class="complaint-sum-desc-wrap"> 
-          <div class="complaint-sum-num-wrap">
-            <label class="complaint-sum-num-label">Complaint No.</label>
-            <p class="complaint-sum-num">02/09/2020/051705</p>
+          <div class="complaint-sum-wrap">
+            <label class="complaint-sum-label">Complaint No.</label>
+            <p class="complaint-sum">02/09/2020/051705</p>
           </div>
-          <div class="complaint-sum-status-wrap">
-            <label class="complaint-sum-status-label">Complaint Status</label>
-            <p class="complaint-sum-status">Filed</p>
+          <div class="complaint-sum-wrap">
+            <label class="complaint-sum-label">Complaint Status</label>
+            <p class="complaint-sum">Filed</p>
           </div>
-          <div class="complaint-sum-date-wrap">
-            <label class="complaint-sum-date-label">Filed Date</label>
-            <p class="complaint-sum-date">1-Aug-2020</p>
+          <div class="complaint-sum-wrap">
+            <label class="complaint-sum-label">Filed Date</label>
+            <p class="complaint-sum">1-Aug-2020</p>
           </div>
-          <div class="complaint-sum-add-wrap">
-            <label class="complaint-sum-add-label">Address</label>
-            <p class="complaint-sum-add">Back side Post Office Patiala Road Ajit Nagar Amritsar</p>
+          <div class="complaint-sum-last-wrap">
+            <label class="complaint-sum-last-label">Address</label>
+            <p class="complaint-sum-last">Back side Post Office Patiala Road Ajit Nagar Amritsar</p>
           </div>
         </div>
         <div class="complaint-sum-photos-wrap">
           <img src="./garbage.webp" class="complaint-sum-photo">
           <img src="./garbage.webp" class="complaint-sum-photo">
-          <img src="./garbage.webp" class="complaint-sum-photo">
+          <img src="./garbage.webp" class="complaint-sum-last-photo">
         </div>
       </div>
 
-    <!-- compplaint timeline -->
-    <div>
-      <div>
-        <label></label>
-        <label>Pending for Assignment</label>
+    <!-- complaint timeline -->
+    <div class="complaint-tl-wrap">
+      <header class="complaint-tl-header">Complaint Timeline</header>
+      <div class="complaint-tl-event-wrap-done">
+        <label class="complaint-tl-event-pointer-done"></label>
+        <label class="complaint-tl-event">Pending for Assignment</label>
       </div>
       
       <!-- line connecting dots -->
-      <div></div>
+      <div class="complaint-tl-pointer-connector"></div>
 
-      <div>
-        <label></label>
-        <label>Complaint Filed</label>
+      <div class="complaint-tl-event-wrap">
+        <label class="complaint-tl-event-pointer"></label>
+        <label class="complaint-tl-event">Complaint Filed</label>
       </div>
     </div>
       
+    <!-- checkbox  -->
+    <div class="card-feedback-form-wrap">
+      <div class="card-checkbox-wrap">
+        <div class="checkbox-wrap">
+          <input type="checkbox" class="checkbox">
+          <label class="custom-checkbox">
+            <img src="./check.png" class="checkbox-check">
+          </label>
+          <label class="checkbox-label">Service</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- otp verification  -->
+    <div class="card">
+      <div class="input-otp-wrap">
+        <input type="number" max="1" class="input-otp"/>
+        <input type="number" max="1" class="input-otp"/>
+        <input type="number" max="1" class="input-otp"/>
+        <input type="number" max="1" class="input-otp"/>
+      </div>
+    </div>
+
+    <!-- warnings  -->
+    <div class="card">
+      <div class="warning-photo-upload-wrap">
+        <label class="warning-photo-upload-message">There is a problem</label>
+        <label class="warning-photo-upload-error">Max 3 complaint photos allowed</label>
+      </div>
+    </div>
+
+    <!-- map  -->
+    <div class="card">
+      <header>Pin Complaint Location</header>
+      <p>Click and hold to drop the pin to complaint location. If you are not able to pin the location you can skip the continue for next step.</p>
+    </div>
+
+    
+
     <div class="hello-world">Hello World</div>
+    <div id="map" style="height: 100%;"></div>  
   </body>
 </html>
