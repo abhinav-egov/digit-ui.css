@@ -1,11 +1,11 @@
-
 module.exports = {
   plugins: [
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ]
-}
+    require("postcss-import"),
+    require("tailwindcss"),
+    require("autoprefixer"),
+    // require("cssnano"),
+  ],
+};
 
 // const fs = require('fs');
 // const { name, version, author, cssConfig } = JSON.parse(fs.readFileSync('package.json'));
