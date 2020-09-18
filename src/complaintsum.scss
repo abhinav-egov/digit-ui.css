@@ -1,4 +1,48 @@
 .complaint-sum-card{
-    @apply bg-white m-sm pt-md  pl-md pb-lg pr-12 shadow-card font-roboto
+    @apply bg-white m-sm pt-md pl-md pb-13 pr-md shadow-card font-roboto
 }
 
+.complaint-sum-header{
+    @apply font-bold text-headerblack text-2024 pb-lg
+}
+
+.complaint-sum-desc-wrap{
+    @apply mb-20
+}
+
+.complaint-sum-wrap{
+    @apply flex border-b border-bordergrey pb-sm mb-sm
+}
+
+.complaint-sum-label{
+    @apply w-1/3 font-bold text-1624
+}
+
+.complaint-sum{
+    @apply w-2/3 font-regular text-1824
+}
+
+.complaint-sum-last-wrap{
+    @apply flex
+}
+
+.complaint-sum-last-label{
+    @apply w-1/3 font-bold text-1624
+}
+
+.complaint-sum-last{
+    @apply w-2/3 font-regular text-1824 pb-sm
+}
+
+.complaint-sum-photos-wrap{
+    @apply flex
+}
+
+.complaint-sum-photo{
+    width: calc( 33% - 9.333px );
+    margin-right: 14px;
+}
+
+.complaint-sum-last-photo{
+    width: calc( 33% - 9.333px );
+}

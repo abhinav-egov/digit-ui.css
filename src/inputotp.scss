@@ -1,0 +1,35 @@
+/*Disable input arrows*/
+/* Chrome, Safari, Edge, Opera */
+.input-otp::-webkit-outer-spin-button,
+.input-otp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input-otp[type=number] {
+  -moz-appearance: textfield;
+}
+/*-------------------------*/
+
+.input-otp-wrap{
+    @apply mb-md
+}
+
+.input-otp{
+    @apply border-2 border-solid border-radioblack h-10 w-10 text-center
+}
+
+.warning-photo-upload-wrap{
+    border: 5px solid #F44336;
+    padding: 16px;
+}
+
+
+.warning-photo-upload-message{
+    @apply font-roboto font-bold text-1619 block mb-sm
+}
+
+.warning-photo-upload-error{
+    @apply font-roboto font-bold text-1619 text-red block
+}
