@@ -21,3 +21,27 @@
 .warning-instruction{
     @apply font-regular font-roboto text-1624 text-grey
 }
+
+@screen mb{
+    
+    .warning-photo-upload-wrap{
+        @apply w-full
+    }
+
+    .warning-instruction-wrap{
+        @apply w-full
+    }
+
+}
+
+@screen dt{
+
+    .warning-photo-upload-wrap{
+        @apply w-2/5
+    }
+
+    .warning-instruction-wrap{
+        @apply w-2/5
+    }
+
+}

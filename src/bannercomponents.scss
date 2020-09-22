@@ -27,6 +27,17 @@
     @apply block float-left mr-6 relative bg-uploadgrey
 }
 
+.upload-camera-img-mini-delete{
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    padding: 2.5px;
+    border-radius: 50%;
+    background-color: white;
+    top: -2.5px;
+    right: -4.5px;
+}
+
 .upload-img-mini{
     height: 100px
 }

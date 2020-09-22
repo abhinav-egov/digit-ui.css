@@ -1,19 +1,13 @@
 .card-checkbox-wrap{
-    @apply
+
 }
+
 .checkbox-wrap{
     height: 38px;
 }
+
 .checkbox-wrap{
     @apply flex mb-lg relative
-}
-
-.card-feedback-question-wrap{
-    @apply mb-lg
-}
-
-.card-feedback-question{
-    @apply font-regular font-roboto text-selectedlabel text-altgrey
 }
 
 .checkbox{
@@ -24,6 +18,10 @@
 
 .checkbox{
     @apply opacity-0 absolute top-0 left-0 z-10
+}
+
+.checkbox-check{
+    
 }
 
 .checkbox-check{
@@ -45,7 +43,7 @@
     @apply border-4 border-orange 
 }
 
-.checkbox:checked ~ .custom-checkbox img{
+.checkbox:checked ~ .custom-checkbox svg{
     @apply opacity-100
 }
 

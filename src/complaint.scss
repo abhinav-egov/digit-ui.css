@@ -6,6 +6,19 @@
     @apply block pb-md font-bold text-2833
 }
 
+.complaintnumber-svg-wrap{
+    @apply flex ml-md text-left
+}
+
+.complaintnumber-svg{
+    @apply block border border-solid border-white rounded-full h-16 w-16 p-13 bg-white
+}
+
+.complaintnumber-label-wrap{
+    @apply ml-md
+}
+
+
 .complaintnumber-label{
     @apply block py-sm font-roboto font-bold text-1821
 }
@@ -20,6 +33,10 @@
 
 .complainterror-header{
     @apply block pb-md font-bold text-2833
+}
+
+.complainterror-svg{
+    @apply h-16 w-16 inline-block
 }
 
 @screen mb{
@@ -40,4 +57,9 @@
     .complainterror-wrap{
         @apply w-2/5
     }
+
+    .complaintnumber-svg-wrap{
+        @apply flex text-left inline-flex
+    }
+    
 }
