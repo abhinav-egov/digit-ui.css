@@ -2,8 +2,16 @@
     @apply bg-white m-sm p-sm shadow-card
 }
 
+.description-wrap{
+    @apply font-regular font-roboto text-headerblack text-1624 mb-lg
+}
+
+.description-text{
+
+}
+
 .card-selected-label{
-    @apply text-selectedlabel font-medium text-headerblack
+    @apply font-roboto text-selectedlabel font-medium text-headerblack
 }
 
 .card-header{
@@ -11,7 +19,7 @@
 }
 
 .card-text{
-    @apply text-grey text-cardtext align-middle text-left
+    @apply font-roboto font-regular text-grey text-cardtext align-middle text-left mb-md
 }
 
 .submit-bar{
@@ -24,4 +32,16 @@
 
 .card-feedback-form-wrap{
     @apply bg-white m-sm p-md shadow-card
+}
+
+@screen mb{
+    .submit-bar{
+        @apply w-full
+    }
+}
+
+@screen dt{
+    .submit-bar{
+        @apply w-2/5
+    }
 }

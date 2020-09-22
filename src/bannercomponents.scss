@@ -41,3 +41,15 @@
 .upload-camera-img-mini{
     @apply absolute
 }
+
+@screen mb{
+    .upload-wrap{
+        @apply w-full
+    }
+}
+
+@screen dt{
+    .upload-wrap{
+        @apply w-2/5
+    }
+}

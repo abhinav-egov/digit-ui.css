@@ -1,7 +1,36 @@
 .card-textinput{
-    @apply mb-lg mt-sm block border-2 border-black border-solid w-full bg-white leading-10 font-roboto text-optionblack text-selectedoption
+    @apply mb-lg mt-sm block border-2 w-full border-radioblack border-solid bg-white leading-10 font-roboto text-optionblack text-selectedoption
 }
 
 .card-textarea{
-    @apply block mt-md mb-lg border-2 border-black border-solid w-full bg-white h-24
+    @apply block mt-md mb-lg border-2 w-full border-radioblack border-solid bg-white h-24
+}
+
+.card-textinput-error{
+    border-width: 5px;
+}
+
+.card-textinput-error{
+    @apply mb-lg mt-sm block w-full border-red border-solid bg-white leading-10 font-roboto text-optionblack text-selectedoption
+}
+
+@screen mb{
+    .card-textinput{
+        @apply w-full
+    }
+
+    .card-textarea{
+        @apply w-full
+    }
+}
+
+@screen dt{
+    .card-textinput{
+        @apply w-2/5
+    }
+
+    .card-textarea{
+        @apply w-2/5
+    }
+
 }

@@ -1,0 +1,23 @@
+
+.warning-photo-upload-wrap{
+    border: 5px solid #F44336;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+
+.warning-photo-upload-message{
+    @apply font-roboto font-bold text-1619 block mb-sm
+}
+
+.warning-photo-upload-error{
+    @apply font-roboto font-bold text-1619 text-red block
+}
+
+.warning-instruction-wrap{
+    @apply mb-md
+}
+
+.warning-instruction{
+    @apply font-regular font-roboto text-1624 text-grey
+}

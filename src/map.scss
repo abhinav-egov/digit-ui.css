@@ -1,0 +1,29 @@
+.map{
+    width: 100%;
+    height: 384px;
+    overflow: visible;
+    position: relative;
+}
+
+.map-search-bar-wrap{
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 4px;
+}
+
+.map-search-bar-icon{
+    @apply inline h-6 w-6
+}
+
+.map-search-bar{
+    
+}
+
+.map-search-bar{
+    @apply block font-roboto text-1619 text-headerblack h-10 w-full
+}
+
+.map-search-bar:focus{
+    border: none
+}
+

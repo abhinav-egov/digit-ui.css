@@ -9,6 +9,18 @@
     padding-bottom: 8px;
 }
 
+@screen mb{
+    .my-complaints-status-wrap{
+        @apply w-full
+    }
+}
+
+@screen dt{
+    .my-complaints-status-wrap{
+        @apply w-2/5
+    }
+}
+
 .my-complaints-header{
     @apply font-roboto font-medium text-2024 float-left
 }

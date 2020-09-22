@@ -8,6 +8,14 @@
     @apply flex mb-lg relative
 }
 
+.card-feedback-question-wrap{
+    @apply mb-lg
+}
+
+.card-feedback-question{
+    @apply font-regular font-roboto text-selectedlabel text-altgrey
+}
+
 .checkbox{
     width: 38px;
     height: 38px;
