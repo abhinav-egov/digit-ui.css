@@ -7,47 +7,47 @@
 }
 
 /* Firefox */
-input-otp[type=number] {
+input-otp[type="number"] {
   -moz-appearance: textfield;
 }
 /*-------------------------*/
 
-.input-otp-wrap{
-    @apply mb-md
+.input-otp-wrap {
+  @apply mb-md;
 }
 
-.input-otp{
-    @apply border-2 border-solid border-radioblack h-10 w-10 text-center
+.input-otp {
+  @apply border-2 border-solid border-radioblack h-10 w-10 text-center;
 }
 
-.input-otp-label-wrap{
-    @apply mb-md
+.input-otp-label-wrap {
+  @apply mb-md;
 }
 
-.input-otp-label{
-    @apply   text-grey text-1624
+.input-otp-label {
+  @apply text-grey text-1624;
 }
 
-.input-otp-label-mob{
-    @apply   text-headerblack text-1624
+.input-otp-label-mob {
+  @apply text-headerblack text-1624;
 }
 
-.input-otp-desc-wrap{
-    @apply mb-lg
+.input-otp-desc-wrap {
+  @apply mb-lg;
 }
 
-.input-otp-desc{
-    @apply   text-1619 text-grey
+.input-otp-desc {
+  @apply text-1619 text-grey;
 }
 
-.input-otp-desc-time{
-    @apply text-headerblack
+.input-otp-desc-time {
+  @apply text-headerblack;
 }
 
-.input-otp-resend-wrap{
-    @apply mb-lg
+.input-otp-resend-wrap {
+  @apply mb-lg;
 }
 
-.input-otp-resend{
-    @apply   text-1619 text-orange
+.input-otp-resend {
+  @apply text-1619 text-orange;
 }

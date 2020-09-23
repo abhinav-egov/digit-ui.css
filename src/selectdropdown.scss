@@ -1,35 +1,34 @@
-.card-select-wrap{
-  
+.card-select-wrap {
 }
 
-.card-select-label{
-  @apply block font-bold text-label text-optionblack font-bold 
+.card-select-label {
+  @apply block font-bold text-label text-optionblack font-bold;
 }
 
-.card-select-label-error{
-  @apply block font-bold text-label text-statusred font-bold 
+.card-select-label-error {
+  @apply block font-bold text-label text-statusred font-bold;
 }
 
-.card-select-dropdown{
-  @apply block border-2 border-radioblack border-solid rounded-none w-full bg-white mb-lg mt-sm leading-10   text-optionblack text-selectedoption
+.card-select-dropdown {
+  @apply block border-2 border-radioblack border-solid rounded-none w-full bg-white mb-lg mt-sm leading-10   text-optionblack text-selectedoption;
 }
 
-.card-select-dropdown:active{
-  @apply border-orange border-4
+.card-select-dropdown:active {
+  @apply border-orange border-4;
 }
 
-.card-select-dropdown-option{
-  @apply   text-optionblack text-selectedoption align-top text-left 
+.card-select-dropdown-option {
+  @apply text-optionblack text-selectedoption align-top text-left;
 }
 
-@screen mb{
-  .card-select-dropdown{
-    @apply w-full
+@screen mb {
+  .card-select-dropdown {
+    @apply w-full;
   }
 }
 
-@screen dt{
-  .card-select-dropdown{
-    @apply w-2/5
+@screen dt {
+  .card-select-dropdown {
+    @apply w-2/5;
   }
 }

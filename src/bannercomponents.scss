@@ -1,66 +1,66 @@
-.upload-wrap{
-    height: 150px;
+.upload-wrap {
+  height: 150px;
 }
 
-.upload-wrap{
-    @apply flex bg-bannerwhite relative mb-lg px-sm
+.upload-wrap {
+  @apply flex bg-bannerwhite relative mb-lg px-sm;
 }
 
-.upload-camera-img{
-    top: 54px;
-    left: calc( 50% - 23px );
-    height: 42px;
-    width: 46px;
+.upload-camera-img {
+  top: 54px;
+  left: calc(50% - 23px);
+  height: 42px;
+  width: 46px;
 }
 
-.upload-camera-img{
-    @apply block absolute
+.upload-camera-img {
+  @apply block absolute;
 }
 
-.upload-camera-img-mini-wrap{
-    height: 100px;
-    width: 100px;
-    margin-top: 35px;
+.upload-camera-img-mini-wrap {
+  height: 100px;
+  width: 100px;
+  margin-top: 35px;
 }
 
-.upload-camera-img-mini-wrap{
-    @apply block mr-6 relative bg-uploadgrey
+.upload-camera-img-mini-wrap {
+  @apply block mr-6 relative bg-uploadgrey;
 }
 
-.upload-camera-img-mini-delete{
-    position: absolute;
-    height: 22px;
-    width: 22px;
-    padding: 2.5px;
-    border-radius: 50%;
-    background-color: white;
-    top: -2.5px;
-    right: -4.5px;
+.upload-camera-img-mini-delete {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  padding: 2.5px;
+  border-radius: 50%;
+  background-color: white;
+  top: -2.5px;
+  right: -4.5px;
 }
 
-.upload-img-mini{
-    height: 100px
+.upload-img-mini {
+  height: 100px;
 }
 
-.upload-camera-img-mini{
-    height: 28px;
-    width: 30.67px;
-    top: 35.33px;
-    left: 34px;
+.upload-camera-img-mini {
+  height: 28px;
+  width: 30.67px;
+  top: 35.33px;
+  left: 34px;
 }
 
-.upload-camera-img-mini{
-    @apply absolute
+.upload-camera-img-mini {
+  @apply absolute;
 }
 
-@screen mb{
-    .upload-wrap{
-        @apply w-full
-    }
+@screen mb {
+  .upload-wrap {
+    @apply w-full;
+  }
 }
 
-@screen dt{
-    .upload-wrap{
-        @apply w-2/5
-    }
+@screen dt {
+  .upload-wrap {
+    @apply w-2/5;
+  }
 }

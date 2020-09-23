@@ -1,20 +1,19 @@
-
-.h1{
-    @apply font-rc text-h1 text-headerblack mx-md font-bold
-  }
-  
-.link-label{
-    @apply text-lightblue text-a underline mx-md
+.h1 {
+  @apply font-rc text-h1 text-headerblack mx-md font-bold;
 }
 
-.back-btn{
-    @apply mx-sm border-solid border-b border-black border-opacity-100 float-left text-black font-rc pr-5
+.link-label {
+  @apply text-lightblue text-a underline mx-md;
 }
 
-.back-btn-pointer{
-    @apply text-pointer align-middle
+.back-btn {
+  @apply mx-sm border-solid border-b border-black border-opacity-100 float-left text-black font-rc pr-5;
 }
 
-.back-btn-label{
-    @apply text-a
+.back-btn-pointer {
+  @apply text-pointer align-middle;
+}
+
+.back-btn-label {
+  @apply text-a;
 }
