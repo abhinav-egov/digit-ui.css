@@ -2,16 +2,24 @@
     @apply bg-white m-sm p-sm shadow-card
 }
 
+.description-wrap{
+    @apply   text-headerblack text-1624 mb-lg
+}
+
+.description-text{
+
+}
+
 .card-selected-label{
-    @apply text-selectedlabel font-medium text-headerblack
+    @apply  text-selectedlabel font-medium text-headerblack
 }
 
 .card-header{
-    @apply text-headerblack text-h1 font-bold align-middle text-left
+    @apply text-headerblack text-h1 font-bold font-rc align-middle text-left
 }
 
 .card-text{
-    @apply text-grey text-cardtext align-middle text-left
+    @apply   text-grey text-cardtext align-middle text-left mb-md
 }
 
 .submit-bar{
@@ -19,9 +27,53 @@
 }
   
 .submit-header{
-    @apply text-label text-white font-regular leading-10
+    @apply font-rc text-label text-white leading-10
 }
 
 .card-feedback-form-wrap{
     @apply bg-white m-sm p-md shadow-card
+}
+
+@screen mb{
+
+    .card-text{
+        @apply w-full
+    }
+
+    .submit-bar{
+        @apply w-full
+    }
+
+    .description-wrap{
+        @apply w-full
+    }
+
+}
+
+@screen dt{
+    
+    .card-text{
+        @apply w-2/5
+    }
+
+    .submit-bar{
+        @apply w-2/5
+    }
+
+    .description-wrap{
+        @apply w-2/5
+    }
+    
+    .card{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-feedback-form-wrap{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }

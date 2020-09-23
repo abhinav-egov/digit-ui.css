@@ -3,7 +3,7 @@
 }
 
 .upload-wrap{
-    @apply bg-bannerwhite relative mb-lg px-sm
+    @apply flex bg-bannerwhite relative mb-lg px-sm
 }
 
 .upload-camera-img{
@@ -24,7 +24,18 @@
 }
 
 .upload-camera-img-mini-wrap{
-    @apply block float-left mr-6 relative bg-uploadgrey
+    @apply block mr-6 relative bg-uploadgrey
+}
+
+.upload-camera-img-mini-delete{
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    padding: 2.5px;
+    border-radius: 50%;
+    background-color: white;
+    top: -2.5px;
+    right: -4.5px;
 }
 
 .upload-img-mini{
@@ -40,4 +51,16 @@
 
 .upload-camera-img-mini{
     @apply absolute
+}
+
+@screen mb{
+    .upload-wrap{
+        @apply w-full
+    }
+}
+
+@screen dt{
+    .upload-wrap{
+        @apply w-2/5
+    }
 }

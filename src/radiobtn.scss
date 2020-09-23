@@ -15,19 +15,31 @@
 }
   
 .card-radio-label{
-    @apply text-label my-radiobtnx ml-radiobtnleft
+    @apply font-rc text-optionblack text-label my-radiobtnx ml-radiobtnleft 
 }
   
   
 .card-radio-btn-wrap:hover input ~ .card-radio-btn-checkmark {
-    @apply shadow-radiobtn rounded-full
+    @apply shadow-radiobtn rounded-full 
+}
+
+.card-radio-btn:hover ~ .card-radio-btn-checkmark{
+    @apply border-orange
 }
   
 .card-radio-btn-checkmark:after {
     content: ''
 }
-  
+
+.card-radio-btn:hover ~ .card-radio-btn-checkmark{
+    @apply border-orange
+}
+
+.card-radio-btn-wrap input:checked  ~ .card-radio-btn-checkmark{
+    @apply border-orange
+}
+
 .card-radio-btn-wrap input:checked ~ .card-radio-btn-checkmark:after {
-    @apply block bg-headerblack h-5 w-5 rounded-full absolute top-10 left-10
+    @apply block bg-orange h-5 w-5 rounded-full absolute top-10 left-10
 }
   

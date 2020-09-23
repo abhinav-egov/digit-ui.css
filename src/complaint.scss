@@ -3,15 +3,28 @@
 }
 
 .complaintnumber-header{
-    @apply block pb-md font-roboto font-bold text-2833
+    @apply block pb-md font-rc font-bold text-2833
 }
 
+.complaintnumber-svg-wrap{
+    @apply flex ml-md text-left
+}
+
+.complaintnumber-svg{
+    @apply block border border-solid border-white rounded-full h-16 w-16 p-13 bg-white
+}
+
+.complaintnumber-label-wrap{
+    @apply ml-md
+}
+
+
 .complaintnumber-label{
-    @apply block py-sm font-roboto font-bold text-1821
+    @apply block py-sm  font-bold text-1821
 }
 
 .complaintnumber-text{
-    @apply font-bold text-2024
+    @apply font-bold  text-2024 
 }
 
 .complainterror-wrap{
@@ -19,5 +32,34 @@
 }
 
 .complainterror-header{
-    @apply block pb-md font-roboto font-bold text-2833
+    @apply block pb-md font-rc font-bold text-2833
+}
+
+.complainterror-svg{
+    @apply h-16 w-16 inline-block
+}
+
+@screen mb{
+    .complaintnumber-wrap{
+        @apply w-full
+    }
+
+    .complainterror-wrap{
+        @apply w-full
+    }
+}
+
+@screen dt{
+    .complaintnumber-wrap{
+        @apply w-2/5
+    }
+
+    .complainterror-wrap{
+        @apply w-2/5
+    }
+
+    .complaintnumber-svg-wrap{
+        @apply flex text-left inline-flex
+    }
+    
 }

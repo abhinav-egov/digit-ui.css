@@ -1,6 +1,6 @@
 
 .h1{
-    @apply text-h1 mx-md font-bold
+    @apply font-rc text-h1 text-headerblack mx-md font-bold
   }
   
 .link-label{
@@ -8,7 +8,7 @@
 }
 
 .back-btn{
-    @apply mx-sm border-solid border-b border-black border-opacity-100 float-left
+    @apply mx-sm border-solid border-b border-black border-opacity-100 float-left text-black font-rc pr-5
 }
 
 .back-btn-pointer{
@@ -18,4 +18,3 @@
 .back-btn-label{
     @apply text-a
 }
-  

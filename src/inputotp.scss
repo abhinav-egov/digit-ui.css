@@ -20,16 +20,34 @@ input-otp[type=number] {
     @apply border-2 border-solid border-radioblack h-10 w-10 text-center
 }
 
-.warning-photo-upload-wrap{
-    border: 5px solid #F44336;
-    padding: 16px;
+.input-otp-label-wrap{
+    @apply mb-md
 }
 
-
-.warning-photo-upload-message{
-    @apply font-roboto font-bold text-1619 block mb-sm
+.input-otp-label{
+    @apply   text-grey text-1624
 }
 
-.warning-photo-upload-error{
-    @apply font-roboto font-bold text-1619 text-red block
+.input-otp-label-mob{
+    @apply   text-headerblack text-1624
+}
+
+.input-otp-desc-wrap{
+    @apply mb-lg
+}
+
+.input-otp-desc{
+    @apply   text-1619 text-grey
+}
+
+.input-otp-desc-time{
+    @apply text-headerblack
+}
+
+.input-otp-resend-wrap{
+    @apply mb-lg
+}
+
+.input-otp-resend{
+    @apply   text-1619 text-orange
 }

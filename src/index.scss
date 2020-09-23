@@ -19,15 +19,10 @@
 @import './complainttl.scss';
 @import './checkbox.scss';
 @import './inputotp.scss';
+@import './map.scss';
+@import './uploaderror.scss';
+@import './feedback.scss';
 
 body{
-  @apply bg-bggrey
-}
-
-.hello-world {
-  padding: 10px;
-  color: green;
-  font-size: 2rem;
-  text-align: center;
-  font-family: sans-serif;
+  @apply bg-bggrey 
 }

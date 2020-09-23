@@ -5,6 +5,10 @@ module.exports = {
   },
   purge: ["./example/index.html"],
   theme: {
+    screens:{
+      mb: '420px',
+      dt: '1024px',
+    },
     colors: {
       darkblue: "#16222A",
       lightnavyblue: "#3A6073",
@@ -14,6 +18,7 @@ module.exports = {
       headerblack: "#0B0C0C",
       bggrey: "#F3F2F1",
       grey: "#505A5F",
+      altgrey: '#707B83',
       green: "#00703C",
       uploadgrey: "#D8D8D8",
       radioblack: "#222222",
@@ -28,8 +33,8 @@ module.exports = {
       bordergrey: "#B1B4B6",
     },
     fontFamily: {
-      sans: ['"Roboto Condensed"'],
-      roboto: ["Roboto"],
+      sans: ["Roboto"],
+      rc: ['"Roboto Condensed"'],
     },
     fontSize: {
       navbarheader: ["20px", "24px"],
@@ -49,6 +54,7 @@ module.exports = {
     },
     padding: {
       3: "3px",
+      5: "5px",
       sm: "8px",
       12: "12px",
       13: "13px",
@@ -86,7 +92,7 @@ module.exports = {
     },
     boxShadow: {
       card: "0 1px 2px 0 rgba(0, 0, 0, 0.16)",
-      radiobtn: "0 0 0 5px rgb(29, 112, 184)",
+      radiobtn: "0 0 0 5px #F47738",
     },
     inset: {
       0: 0,
