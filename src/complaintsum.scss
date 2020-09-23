@@ -1,5 +1,5 @@
 .complaint-sum-card{
-    @apply bg-white m-sm pt-md pl-md pb-13 pr-md shadow-card font-roboto
+    @apply bg-white m-sm pt-md pl-md pb-13 pr-md shadow-card 
 }
 
 .complaint-sum-header{
@@ -19,7 +19,7 @@
 }
 
 .complaint-sum{
-    @apply w-2/3 font-regular text-1824
+    @apply w-2/3  text-1824
 }
 
 .complaint-sum-last-wrap{
@@ -31,7 +31,7 @@
 }
 
 .complaint-sum-last{
-    @apply w-2/3 font-regular text-1824 pb-sm
+    @apply w-2/3  text-1824 pb-sm
 }
 
 .complaint-sum-photos-wrap{
@@ -45,4 +45,12 @@
 
 .complaint-sum-last-photo{
     width: calc( 33% - 9.333px );
+}
+
+@screen dt{
+    .complaint-sum-card{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

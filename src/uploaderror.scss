@@ -7,11 +7,11 @@
 
 
 .warning-photo-upload-message{
-    @apply font-roboto font-bold text-1619 block mb-sm
+    @apply  font-bold text-1619 block mb-sm
 }
 
 .warning-photo-upload-error{
-    @apply font-roboto font-bold text-1619 text-red block
+    @apply  font-bold text-1619 text-red block
 }
 
 .warning-instruction-wrap{
@@ -19,7 +19,7 @@
 }
 
 .warning-instruction{
-    @apply font-regular font-roboto text-1624 text-grey
+    @apply   text-1624 text-grey
 }
 
 @screen mb{

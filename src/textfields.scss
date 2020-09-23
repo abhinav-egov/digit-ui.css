@@ -1,5 +1,5 @@
 .card-textinput{
-    @apply mb-lg mt-sm block border-2 w-full border-radioblack border-solid bg-white leading-10 font-roboto text-optionblack text-selectedoption
+    @apply mb-lg mt-sm block border-2 w-full border-radioblack border-solid bg-white leading-10  text-optionblack text-selectedoption
 }
 
 .card-textarea{
@@ -11,7 +11,7 @@
 }
 
 .card-textinput-error{
-    @apply mb-lg mt-sm block w-full border-red border-solid bg-white leading-10 font-roboto text-optionblack text-selectedoption
+    @apply mb-lg mt-sm block w-full border-red border-solid bg-white leading-10  text-optionblack text-selectedoption
 }
 
 @screen mb{

@@ -22,7 +22,7 @@
 }
 
 .my-complaints-header{
-    @apply font-roboto font-medium text-2024 float-left
+    @apply  font-medium text-2024 float-left
 }
 
 .my-complaints-status{
@@ -34,13 +34,13 @@
 }
 
 .my-complaints-status{
-    @apply font-roboto font-regular text-2024 text-statusred text-center bg-pink float-right 
+    @apply   text-2024 text-statusred text-center bg-pink float-right 
 }
 
 /* date and calender img */
 
 .my-complaints-date-wrap{
-    @apply font-roboto h-6 mb-19 
+    @apply  h-6 mb-19 
 }
 
 .my-complaints-date-img{
@@ -48,7 +48,7 @@
 }
 
 .my-complaints-date-txt{
-    @apply font-roboto font-regular text-1619 text-headerblack align-middle pl-sm
+    @apply   text-1619 text-headerblack align-middle pl-sm
 }
 
 /* complaint number*/
@@ -58,11 +58,11 @@
 }
 
 .my-complaints-number-wrap{
-    @apply font-roboto mb-19
+    @apply  mb-19
 }
 
 .my-complaints-label{
-    @apply block font-regular text-2024
+    @apply block  text-2024
 }
 
 .my-complaints-header{
@@ -72,6 +72,17 @@
 /* comment */
 
 .my-complaints-text{
-    @apply font-roboto font-regular block text-1821 text-commentblack
+    @apply   block text-1821 text-commentblack
 }
 
+@screen mb{
+    
+}
+
+@screen dt{
+    .my-complaints-card{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -33,8 +33,8 @@ module.exports = {
       bordergrey: "#B1B4B6",
     },
     fontFamily: {
-      sans: ['"Roboto Condensed"'],
-      roboto: ["Roboto"],
+      sans: ["Roboto"],
+      rc: ['"Roboto Condensed"'],
     },
     fontSize: {
       navbarheader: ["20px", "24px"],
@@ -54,6 +54,7 @@ module.exports = {
     },
     padding: {
       3: "3px",
+      5: "5px",
       sm: "8px",
       12: "12px",
       13: "13px",

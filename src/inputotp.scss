@@ -25,11 +25,11 @@ input-otp[type=number] {
 }
 
 .input-otp-label{
-    @apply font-roboto font-regular text-grey text-1624
+    @apply   text-grey text-1624
 }
 
 .input-otp-label-mob{
-    @apply font-roboto font-regular text-headerblack text-1624
+    @apply   text-headerblack text-1624
 }
 
 .input-otp-desc-wrap{
@@ -37,7 +37,7 @@ input-otp[type=number] {
 }
 
 .input-otp-desc{
-    @apply font-roboto font-regular text-1619 text-grey
+    @apply   text-1619 text-grey
 }
 
 .input-otp-desc-time{
@@ -49,5 +49,5 @@ input-otp[type=number] {
 }
 
 .input-otp-resend{
-    @apply font-roboto font-regular text-1619 text-orange
+    @apply   text-1619 text-orange
 }

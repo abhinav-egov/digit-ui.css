@@ -3,7 +3,7 @@
 }
 
 .complaintnumber-header{
-    @apply block pb-md font-bold text-2833
+    @apply block pb-md font-rc font-bold text-2833
 }
 
 .complaintnumber-svg-wrap{
@@ -20,11 +20,11 @@
 
 
 .complaintnumber-label{
-    @apply block py-sm font-roboto font-bold text-1821
+    @apply block py-sm  font-bold text-1821
 }
 
 .complaintnumber-text{
-    @apply font-bold font-roboto text-2024 
+    @apply font-bold  text-2024 
 }
 
 .complainterror-wrap{
@@ -32,7 +32,7 @@
 }
 
 .complainterror-header{
-    @apply block pb-md font-bold text-2833
+    @apply block pb-md font-rc font-bold text-2833
 }
 
 .complainterror-svg{
