@@ -1,45 +1,43 @@
-.card-radio-wrap{
-    @apply my-sm block leading-10
+.card-radio-wrap {
+  @apply my-sm block leading-10;
 }
-  
-.card-radio-btn-wrap{
-    @apply block float-left relative
+
+.card-radio-btn-wrap {
+  @apply block float-left relative;
 }
-  
-.card-radio-btn{
-    @apply opacity-0 absolute cursor-pointer h-10 w-10
+
+.card-radio-btn {
+  @apply opacity-0 absolute cursor-pointer h-10 w-10;
 }
-  
-.card-radio-btn-checkmark{
-   @apply h-10 w-10 border-2 border-radioblack border-solid rounded-full block
+
+.card-radio-btn-checkmark {
+  @apply h-10 w-10 border-2 border-radioblack border-solid rounded-full block;
 }
-  
-.card-radio-label{
-    @apply font-rc text-optionblack text-label my-radiobtnx ml-radiobtnleft 
+
+.card-radio-label {
+  @apply font-rc text-optionblack text-label my-radiobtnx ml-radiobtnleft;
 }
-  
-  
+
 .card-radio-btn-wrap:hover input ~ .card-radio-btn-checkmark {
-    @apply shadow-radiobtn rounded-full 
+  @apply shadow-radiobtn rounded-full;
 }
 
-.card-radio-btn:hover ~ .card-radio-btn-checkmark{
-    @apply border-orange
+.card-radio-btn:hover ~ .card-radio-btn-checkmark {
+  @apply border-orange;
 }
-  
+
 .card-radio-btn-checkmark:after {
-    content: ''
+  content: "";
 }
 
-.card-radio-btn:hover ~ .card-radio-btn-checkmark{
-    @apply border-orange
+.card-radio-btn:hover ~ .card-radio-btn-checkmark {
+  @apply border-orange;
 }
 
-.card-radio-btn-wrap input:checked  ~ .card-radio-btn-checkmark{
-    @apply border-orange
+.card-radio-btn-wrap input:checked ~ .card-radio-btn-checkmark {
+  @apply border-orange;
 }
 
 .card-radio-btn-wrap input:checked ~ .card-radio-btn-checkmark:after {
-    @apply block bg-orange h-5 w-5 rounded-full absolute top-10 left-10
+  @apply block bg-orange h-5 w-5 rounded-full absolute top-10 left-10;
 }
-  

@@ -1,58 +1,53 @@
-.card-checkbox-wrap{
-
+.card-checkbox-wrap {
 }
 
-.checkbox-wrap{
-    height: 38px;
+.checkbox-wrap {
+  height: 38px;
 }
 
-.checkbox-wrap{
-    @apply flex mb-lg relative
+.checkbox-wrap {
+  @apply flex mb-lg relative;
 }
 
-.checkbox{
-    width: 38px;
-    height: 38px;
-
+.checkbox {
+  width: 38px;
+  height: 38px;
 }
 
-.checkbox{
-    @apply opacity-0 absolute top-0 left-0 z-10
+.checkbox {
+  @apply opacity-0 absolute top-0 left-0 z-10;
 }
 
-.checkbox-check{
-    
+.checkbox-check {
 }
 
-.checkbox-check{
-    @apply opacity-0
+.checkbox-check {
+  @apply opacity-0;
 }
 
-.custom-checkbox{
-    width: 38px;
-    height: 38px;
-
+.custom-checkbox {
+  width: 38px;
+  height: 38px;
 }
 
-.custom-checkbox{
-    @apply absolute top-0 left-0 border-2 border-solid border-radioblack z-0
+.custom-checkbox {
+  @apply absolute top-0 left-0 border-2 border-solid border-radioblack z-0;
 }
 
-
-.checkbox:checked ~ .custom-checkbox{
-    @apply border-4 border-orange 
+.checkbox:checked ~ .custom-checkbox {
+  @apply border-4 border-orange;
 }
 
-.checkbox:checked ~ .custom-checkbox svg{
-    @apply opacity-100
+.checkbox:checked ~ .custom-checkbox svg {
+  @apply opacity-100;
 }
 
-.checkbox-label{
-    margin-left: 60px;
-    padding-top: 6.5px;
-    font-family: "Roboto Condensed";
+.checkbox-label {
+  margin-left: 60px;
+  padding-top: 6.5px;
+  font-family: "Roboto Condensed";
 }
 
-.checkbox-label{
-    @apply text-label
+.checkbox-label {
+  @apply text-label;
 }

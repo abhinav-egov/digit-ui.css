@@ -5,9 +5,9 @@ module.exports = {
   },
   purge: ["./example/index.html"],
   theme: {
-    screens:{
-      mb: '420px',
-      dt: '1024px',
+    screens: {
+      mb: "420px",
+      dt: "1024px",
     },
     colors: {
       darkblue: "#16222A",
@@ -18,7 +18,7 @@ module.exports = {
       headerblack: "#0B0C0C",
       bggrey: "#F3F2F1",
       grey: "#505A5F",
-      altgrey: '#707B83',
+      altgrey: "#707B83",
       green: "#00703C",
       uploadgrey: "#D8D8D8",
       radioblack: "#222222",

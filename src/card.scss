@@ -1,79 +1,74 @@
-.card{
-    @apply bg-white m-sm p-sm shadow-card
+.card {
+  @apply bg-white m-sm p-sm shadow-card;
 }
 
-.description-wrap{
-    @apply   text-headerblack text-1624 mb-lg
+.description-wrap {
+  @apply text-headerblack text-1624 mb-lg;
 }
 
-.description-text{
-
+.description-text {
 }
 
-.card-selected-label{
-    @apply  text-selectedlabel font-medium text-headerblack
+.card-selected-label {
+  @apply text-selectedlabel font-medium text-headerblack;
 }
 
-.card-header{
-    @apply text-headerblack text-h1 font-bold font-rc align-middle text-left
+.card-header {
+  @apply text-headerblack text-h1 font-bold font-rc align-middle text-left;
 }
 
-.card-text{
-    @apply   text-grey text-cardtext align-middle text-left mb-md
+.card-text {
+  @apply text-grey text-cardtext align-middle text-left mb-md;
 }
 
-.submit-bar{
-    @apply h-10 bg-orange text-center border-b-2 border-darkgreen border-solid 
-}
-  
-.submit-header{
-    @apply font-rc text-label text-white leading-10
+.submit-bar {
+  @apply h-10 bg-orange text-center border-b-2 border-darkgreen border-solid;
 }
 
-.card-feedback-form-wrap{
-    @apply bg-white m-sm p-md shadow-card
+.submit-header {
+  @apply font-rc text-label text-white leading-10;
 }
 
-@screen mb{
-
-    .card-text{
-        @apply w-full
-    }
-
-    .submit-bar{
-        @apply w-full
-    }
-
-    .description-wrap{
-        @apply w-full
-    }
-
+.card-feedback-form-wrap {
+  @apply bg-white m-sm p-md shadow-card;
 }
 
-@screen dt{
-    
-    .card-text{
-        @apply w-2/5
-    }
+@screen mb {
+  .card-text {
+    @apply w-full;
+  }
 
-    .submit-bar{
-        @apply w-2/5
-    }
+  .submit-bar {
+    @apply w-full;
+  }
 
-    .description-wrap{
-        @apply w-2/5
-    }
-    
-    .card{
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .description-wrap {
+    @apply w-full;
+  }
+}
 
-    .card-feedback-form-wrap{
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+@screen dt {
+  .card-text {
+    @apply w-2/5;
+  }
 
+  .submit-bar {
+    @apply w-2/5;
+  }
+
+  .description-wrap {
+    @apply w-2/5;
+  }
+
+  .card {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-feedback-form-wrap {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
