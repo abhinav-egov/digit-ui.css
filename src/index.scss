@@ -1,5 +1,9 @@
 /*@import 'normalize.css';*/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
@@ -13,10 +17,9 @@
 @import "./selectdropdown.scss";
 @import "./textfields.scss";
 @import "./bannercomponents.scss";
-@import "./complaint.scss";
 @import "./mycomplaints.scss";
-@import "./complaintsum.scss";
-@import "./complainttl.scss";
+@import "./datatable.scss";
+@import "./checkpoint.scss";
 @import "./checkbox.scss";
 @import "./inputotp.scss";
 @import "./map.scss";

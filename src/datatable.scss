@@ -1,0 +1,44 @@
+.complaint-sum-card {
+  @apply bg-white m-sm pt-md pl-md pb-13 pr-md shadow-card;
+
+  header {
+    @apply font-bold text-headerblack text-2024 pb-lg;
+  }
+  
+}
+
+.data-table {
+  @apply mb-20;
+
+  .data-table-row {
+    @apply flex border-b border-bordergrey pb-sm mb-sm;
+
+    label{
+      @apply w-1/3 font-bold text-1624;
+    }
+
+    p{
+      @apply w-2/3  text-1824;
+    }
+  }
+
+  .data-table-row-last{
+    @apply flex;
+
+    label{
+      @apply w-1/3 font-bold text-1624;
+    }
+
+    p{
+      @apply w-2/3 text-1824 pb-sm;
+    }
+  }
+}
+
+@screen dt {
+  .complaint-sum-card {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

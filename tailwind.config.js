@@ -33,7 +33,7 @@ module.exports = {
       bordergrey: "#B1B4B6",
     },
     fontFamily: {
-      sans: ["Roboto"],
+      sans: ["Roboto", "Open Sans", "sans-serif"],
       rc: ['"Roboto Condensed"'],
     },
     fontSize: {

@@ -9,10 +9,6 @@
     <!-- css prod path https://unpkg.com/@egovernments/digit-ui.css/dist/index.min.css -->
     <link href="index.css" rel="stylesheet">
 
-    <!-- roboto and Condensed fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
   </head>
 
   <body>
@@ -88,19 +84,19 @@
       <!-- successfull submittion card  -->
         <div class="banner-completed-wrap">
           <header>Complaint Submitted</header>
-          <div class="complaintnumber-svg-wrap">
-            <img src="../svg/success.svg" class="complaintnumber-svg"/>
+          <div class="banner-completed-svg-wrap">
+            <img src="../svg/success.svg"/>
             <div class="complaintnumber-label-wrap">
-              <label class="complaintnumber-label">Complaint No.</label>
-              <p class="complaintnumber-text">02/09/2020/051705</p>
+              <label>Complaint No.</label>
+              <p>02/09/2020/051705</p>
             </div>
           </div>
         </div>
 
       <!-- complaint error card -->
-        <div class="complainterror-wrap">
-          <header class="complainterror-header">Complaint Not Submitted</header>
-          <img src="../svg/error.svg" class="complainterror-svg" alt="">
+        <div class="banner-error-wrap">
+          <header>Complaint Not Submitted</header>
+          <img src="../svg/error.svg" alt="">
         </div>
 
       <!-- description text  -->
@@ -119,65 +115,65 @@
     <!-- my complaint section  -->
       <div class="my-complaints-card">
         <div class="my-complaints-status-wrap">
-          <header class="my-complaints-header">Burning of Garbage</header>
-          <header class="my-complaints-status">OPEN</header>
+          <header>Burning of Garbage</header>
+          <p>OPEN</p>
         </div>
 
         <div class="my-complaints-date-wrap">
-          <img src="../img/calender.png" class="my-complaints-date-img" >
-          <label class="my-complaints-date-txt">2-Aug-2020</label>
+          <img src="../img/calender.png">
+          <label>2-Aug-2020</label>
         </div>
         
         <div class="my-complaints-number-wrap">
-          <label class="my-complaints-label">Complaint No.</label>
-          <header class="my-complaints-header">02/09/2020/051705</header>
+          <label>Complaint No.</label>
+          <header>02/09/2020/051705</header>
         </div>
         
-        <p class="my-complaints-text">Complaint Pending for Assignment</p>
+        <p>Complaint Pending for Assignment</p>
       </div>
 
     <!-- complaint summary -->
       <div class="complaint-sum-card">
-        <header class="complaint-sum-header">Burning of Garbage</header>
-        <div class="complaint-sum-desc-wrap"> 
-          <div class="complaint-sum-wrap">
-            <label class="complaint-sum-label">Complaint No.</label>
-            <p class="complaint-sum">02/09/2020/051705</p>
+        <header>Burning of Garbage</header>
+        <div class="data-table"> 
+          <div class="data-table-row">
+            <label>Complaint No.</label>
+            <p>02/09/2020/051705</p>
           </div>
-          <div class="complaint-sum-wrap">
-            <label class="complaint-sum-label">Complaint Status</label>
-            <p class="complaint-sum">Filed</p>
+          <div class="data-table-row">
+            <label>Complaint Status</label>
+            <p>Filed</p>
           </div>
-          <div class="complaint-sum-wrap">
-            <label class="complaint-sum-label">Filed Date</label>
-            <p class="complaint-sum">1-Aug-2020</p>
+          <div class="data-table-row">
+            <label>Filed Date</label>
+            <p>1-Aug-2020</p>
           </div>
-          <div class="complaint-sum-last-wrap">
-            <label class="complaint-sum-last-label">Address</label>
-            <p class="complaint-sum-last">Back side Post Office Patiala Road Ajit Nagar Amritsar</p>
+          <div class="data-table-row-last">
+            <label>Address</label>
+            <p>Back side Post Office Patiala Road Ajit Nagar Amritsar</p>
           </div>
         </div>
-        <div class="complaint-sum-photos-wrap">
-          <img src="./garbage.webp" class="complaint-sum-photo">
-          <img src="./garbage.webp" class="complaint-sum-photo">
-          <img src="./garbage.webp" class="complaint-sum-last-photo">
+        <div class="display-photos-wrap">
+          <img src="./garbage.webp" class="display-photo">
+          <img src="./garbage.webp" class="display-photo">
+          <img src="./garbage.webp" class="display-photo-last">
         </div>
       </div>
 
     <!-- complaint timeline -->
-    <div class="complaint-tl-wrap">
-      <header class="complaint-tl-header">Complaint Timeline</header>
-      <div class="complaint-tl-event-wrap-done">
-        <label class="complaint-tl-event-pointer-done"></label>
-        <label class="complaint-tl-event">Pending for Assignment</label>
+    <div class="checkpoint-wrap">
+      <h1>Complaint Timeline</h1>
+      <div class="checkpoint-done">
+        <label></label>
+        <header>Pending for Assignment</header>
       </div>
       
       <!-- line connecting dots -->
-      <div class="complaint-tl-pointer-connector"></div>
+      <div class="checkpoint-connect"></div>
 
-      <div class="complaint-tl-event-wrap">
-        <label class="complaint-tl-event-pointer"></label>
-        <label class="complaint-tl-event">Complaint Filed</label>
+      <div class="checkpoint">
+        <label></label>
+        <header>Complaint Filed</header>
       </div>
     </div>
       
