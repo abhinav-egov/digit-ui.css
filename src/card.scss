@@ -1,5 +1,9 @@
 .card {
   @apply bg-white m-sm p-sm shadow-card;
+
+  .card-header {
+    @apply text-headerblack text-h1 font-bold font-rc align-middle text-left;
+  }
 }
 
 .description-wrap {
@@ -11,10 +15,6 @@
 
 .card-selected-label {
   @apply text-selectedlabel font-medium text-headerblack;
-}
-
-.card-header {
-  @apply text-headerblack text-h1 font-bold font-rc align-middle text-left;
 }
 
 .card-text {

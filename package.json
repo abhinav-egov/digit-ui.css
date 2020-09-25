@@ -1,11 +1,11 @@
 {
   "name": "@egovernments/digit-ui.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Made with create-ui-library",
   "author": "abhinav-egov",
   "license": "MIT",
   "repository": "abhinav-egov/digit-ui.css",
-  "main": "index.css",
+  "main": "dist/index.css",
   "engines": {
     "node": ">=10"
   },
@@ -13,21 +13,17 @@
     "prefix": ""
   },
   "scripts": {
-    "start": "npx postcss src/index.scss -o example/dev.css --no-map --env development -w",
-    "build": "npm-run-all raw prod compat",
-    "raw": "npx postcss src/index.scss -o index.css --no-map --env development",
-    "compat": "npx postcss src/index.scss -o index.compat.css --no-map --env compat",
-    "prod": "npx postcss src/index.scss -o index.min.css --no-map --env production",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "prepublish": "yarn build",
-    "deploy": "gh-pages -d example/build",
-    "build-css": "postcss build src/index.scss -o example/dev.css"
+    "start": "gulp build",
+    "dev": "postcss src/index.scss -o example/dev.css --no-map --env development",
+    "build:prod": "NODE_ENV=production gulp build",
+    "prepublish": "yarn build:prod",
+    "deploy": "gh-pages -d example/build"
   },
   "browserslist": [
     "> 3%",
     "last 2 versions"
   ],
-  "style": "./index.css",
+  "style": "./dist/index.css",
   "dependencies": {
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
@@ -35,23 +31,32 @@
     "tailwindcss": "^1.8.10"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.0.0",
     "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
     "husky": ">=4",
     "lint-staged": ">=10",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^7.0.32",
-    "postcss-cli": "^7.1.2",
+    "postcss": "^8.0.9",
+    "postcss-cli": "^8.0.0",
     "postcss-header": "^2.0.0",
     "postcss-import": "^12.0.1",
     "postcss-prefixer": "^2.1.2",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "2.1.2"
+    "postcss-scss": "^3.0.1",
+    "prettier": "2.1.2",
+    "sass": "^1.26.11"
   },
   "files": [
-    "index.compat.css",
-    "index.min.css",
-    "index.css",
+    "dist/index.min.css",
+    "dist/index.css",
+    "svg/**/*.svg",
+    "img/**/*.png",
     "src/**/*.scss",
     "src/**/*.css"
   ],
