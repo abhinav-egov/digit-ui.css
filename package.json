@@ -1,6 +1,6 @@
 {
   "name": "@egovernments/digit-ui.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Made with create-ui-library",
   "author": "abhinav-egov",
   "license": "MIT",
@@ -53,6 +53,8 @@
   "files": [
     "dist/index.min.css",
     "dist/index.css",
+    "svg/**/*.svg",
+    "img/**/*.png",
     "src/**/*.scss",
     "src/**/*.css"
   ],
