@@ -38,8 +38,8 @@
   @apply border-4 border-orange;
 }
 
-.checkbox:checked ~ .custom-checkbox svg {
-  @apply opacity-100;
+.checkbox:checked ~ .custom-checkbox img{
+    @apply opacity-100
 }
 
 .checkbox-label {
