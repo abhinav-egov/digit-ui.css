@@ -1,0 +1,26 @@
+.rating-star-wrap {
+  margin-bottom: 54px;
+}
+
+.rating-star-wrap {
+  @apply flex;
+}
+
+.rating-star {
+  width: 40px;
+  height: 38px;
+  display: block;
+  margin: auto;
+}
+
+@screen dt {
+  .rating-star-wrap {
+    @apply w-full;
+  }
+}
+
+@screen dt {
+  .rating-star-wrap {
+    @apply w-2/5;
+  }
+}

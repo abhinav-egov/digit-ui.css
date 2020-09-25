@@ -1,9 +1,10 @@
-.complaintnumber-wrap {
+.banner-completed-wrap {
   @apply block bg-green w-full text-center text-white pt-md pb-xl mb-22;
-}
+  
+  header{
+    @apply block pb-md font-rc font-bold text-2833;
+  }
 
-.complaintnumber-header {
-  @apply block pb-md font-rc font-bold text-2833;
 }
 
 .complaintnumber-svg-wrap {

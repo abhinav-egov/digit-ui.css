@@ -33,6 +33,14 @@
   @apply bg-white m-sm p-md shadow-card;
 }
 
+.card-feedback-question-wrap {
+  @apply mb-lg;
+}
+
+.card-feedback-question {
+  @apply text-selectedlabel text-altgrey;
+}
+
 @screen mb {
   .card-text {
     @apply w-full;
