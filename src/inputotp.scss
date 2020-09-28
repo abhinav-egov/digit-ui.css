@@ -17,7 +17,7 @@ input-otp[type="number"] {
 }
 
 .input-otp {
-  @apply border-2 border-solid border-radioblack h-10 w-10 text-center;
+  @apply border-2 border-solid border-radioblack outline-none h-10 w-10 text-center;
 }
 
 .input-otp-label-wrap {

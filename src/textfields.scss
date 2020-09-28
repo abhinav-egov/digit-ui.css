@@ -1,9 +1,9 @@
 .card-textinput {
-  @apply mb-lg mt-sm block border-2 w-full border-radioblack border-solid bg-white leading-10  text-optionblack text-selectedoption;
+  @apply mb-lg outline-none mt-sm block border-2 w-full border-radioblack border-solid bg-white leading-10  text-optionblack text-selectedoption;
 }
 
 .card-textarea {
-  @apply block mt-md mb-lg border-2 w-full border-radioblack border-solid bg-white h-24;
+  @apply block outline-none mt-md mb-lg border-2 w-full border-radioblack border-solid bg-white h-24;
 }
 
 .card-textinput-error {
@@ -11,7 +11,7 @@
 }
 
 .card-textinput-error {
-  @apply mb-lg mt-sm block w-full border-red border-solid bg-white leading-10  text-optionblack text-selectedoption;
+  @apply mb-lg mt-sm block w-full outline-none border-red border-solid bg-white leading-10  text-optionblack text-selectedoption;
 }
 
 @screen mb {

@@ -39,8 +39,6 @@ module.exports = {
     fontSize: {
       navbarheader: ["20px", "24px"],
       h1: ["28px", "40px"],
-      a: ["15px", "20px"],
-      pointer: ["10px", "10px"],
       1619: ["16px", "19px"],
       1624: ["16px", "24px"],
       cardtext: ["16px", "24px"],
@@ -65,6 +63,7 @@ module.exports = {
       xl: "36px",
     },
     margin: {
+      0: "0",
       6: "6px",
       radiobtnx: "7.5px",
       sm: "8px",
@@ -76,6 +75,7 @@ module.exports = {
       20: "20px",
       22: "22px",
       lg: "24px",
+      160: "160px",
     },
     fontWeight: {
       light: 300,

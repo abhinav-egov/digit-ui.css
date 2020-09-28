@@ -42,9 +42,6 @@
 }
 
 @screen mb {
-  .card-text {
-    @apply w-full;
-  }
 
   .submit-bar {
     @apply w-full;
@@ -56,10 +53,6 @@
 }
 
 @screen dt {
-  .card-text {
-    @apply w-2/5;
-  }
-
   .submit-bar {
     @apply w-2/5;
   }

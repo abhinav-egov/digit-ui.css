@@ -1,19 +1,40 @@
+body {
+  @apply bg-bggrey;
+}
+
 .h1 {
   @apply font-rc text-h1 text-headerblack mx-md font-bold;
 }
 
 .link-label {
-  @apply text-lightblue text-a underline mx-md;
+  @apply text-lightblue text-1619 underline mx-md;
 }
 
 .back-btn {
-  @apply mx-sm border-solid border-b border-black border-opacity-100 float-left text-black font-rc pr-5;
+  @apply mx-sm border-solid border-b border-black float-left text-black font-rc pr-5;
+
+  label{
+    margin-right: 7.5px;
+    font-size: 10px;
+  }
+
+  label{
+    @apply block float-left align-middle;
+  }
+
+  p{
+    @apply float-right text-1619;
+  }
+
 }
 
-.back-btn-pointer {
-  @apply text-pointer align-middle;
-}
+@screen dt{
+  
+  .app-container{
+    @apply mx-160 font-regular
+  }
 
-.back-btn-label {
-  @apply text-a;
+  .back-btn {
+    @apply mx-0;
+  }
 }
