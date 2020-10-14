@@ -21,7 +21,7 @@
 
 .select-wrap{
 
-  @apply mb-lg;
+  @apply mb-lg relative;
 
   .select{
     @apply block w-full h-10 border-2 border-solid border-input-border;
@@ -39,8 +39,25 @@
     }
   }
 
+  .select-active{
+    @apply block w-full h-10 border-2 border-solid border-primary-main;
+    
+    p{
+      @apply text-caption-m text-text-primary float-left ml-sm;
+    }
+
+    p{
+      padding-top: 9px;
+    }
+
+    img{
+      @apply float-right h-6 w-6 mt-sm mr-sm;
+    }
+  }
+
   .options-card{
-    @apply mt-xs w-full shadow-card;
+    width: 100% !important;
+    @apply absolute z-10 mt-xs bg-white shadow-card;
     
     p{
       @apply w-full h-12 pl-sm text-text-primary text-caption-m;
