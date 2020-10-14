@@ -1,75 +1,72 @@
 .card {
-  @apply bg-white m-sm p-sm shadow-card;
+  @apply bg-white m-sm px-sm pt-sm pb-lg shadow-card;
 
   .card-header {
-    @apply text-headerblack text-h1 font-bold font-rc align-middle text-left;
+    @apply text-text-primary text-heading-xl font-bold font-rc align-middle text-left mb-md;
   }
-}
 
-.description-wrap {
-  @apply text-headerblack text-1624 mb-lg;
-}
+  .card-sub-header {
+    @apply text-text-primary text-heading-l font-bold align-middle text-left mb-lg;
+  }
 
-.description-text {
-}
+  .card-caption {
+    @apply text-text-secondary text-caption-xl mb-sm;
+  }
 
-.card-selected-label {
-  @apply text-selectedlabel font-medium text-headerblack;
-}
+  .card-text {
+    @apply text-text-secondary text-body-l align-middle text-left mb-lg;
+  }
 
-.card-text {
-  @apply text-grey text-cardtext align-middle text-left mb-md;
+  .card-text-button{
+    @apply text-primary-main text-text-btn
+  }
+
+  .card-label{
+    @apply font-bold text-legend text-text-primary mb-md;
+  }
+
+  .card-label-error {
+    @apply block font-bold text-legend text-error mb-md;
+  }
 }
 
 .submit-bar {
-  @apply h-10 bg-orange text-center border-b-2 border-darkgreen border-solid;
-}
+  @apply h-10 bg-primary-main text-center border-b-2 border-input-border border-solid w-full;
 
-.submit-header {
-  @apply font-rc text-label text-white leading-10;
-}
-
-.card-feedback-form-wrap {
-  @apply bg-white m-sm p-md shadow-card;
-}
-
-.card-feedback-question-wrap {
-  @apply mb-lg;
-}
-
-.card-feedback-question {
-  @apply text-selectedlabel text-altgrey;
-}
-
-@screen mb {
-
-  .submit-bar {
-    @apply w-full;
+  header{
+    @apply font-rc font-medium text-legend text-white leading-10;
   }
 
-  .description-wrap {
-    @apply w-full;
-  }
 }
 
 @screen dt {
   .submit-bar {
-    @apply w-2/5;
-  }
-
-  .description-wrap {
-    @apply w-2/5;
+    width: 240px;
   }
 
   .card {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 320px;
+    padding-left: 16px;
+    padding-top: 16px;
+    .card-header {
+      @apply text-heading-xl-dt
+    }
+
+    .card-sub-header {
+      @apply text-heading-l-dt
+    }
+
+    .card-caption {
+      @apply text-caption-xl-dt
+    }
+
+    .card-text {
+      @apply text-body-l-dt
+    }
+
   }
 
-  .card-feedback-form-wrap {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }

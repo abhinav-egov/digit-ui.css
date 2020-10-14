@@ -1,8 +1,8 @@
 .checkpoint-wrap {
-  @apply bg-white m-sm pt-md pl-md pb-29 shadow-card;
+  @apply bg-white m-sm pt-md pl-md pb-lg shadow-card;
 
   h1 {
-    @apply font-bold text-2024 text-optionblack mb-lg;
+    @apply font-bold text-caption-m text-text-primary mb-lg;
   }
   
 }
@@ -10,45 +10,46 @@
 .checkpoint-done {
   @apply flex;
 
-  label {
-    border: 1px solid #1d70b8;
-    width: 20px;
-    height: 20px;
+  h2 {
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    background-color: #1d70b8;
+    @apply border-b border-solid border-primary-main bg-primary-main;
   }
 
   header {
-    @apply text-1821 ml-12;
+    @apply text-heading-s ml-md;
+
+    p{
+      margin-top: 4px;
+      @apply text-heading-s text-text-secondary
+    }
   }
+
 }
 
 .checkpoint {
   @apply flex;
 
-  label {
-    border: 1px solid #d8d8d8;
-    width: 20px;
-    height: 20px;
+  h2 {
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    background-color: #d8d8d8;
+    @apply border-b border-solid border-border bg-border;
   }
 
   header {
-    @apply text-1821 ml-12;
+    @apply text-heading-s ml-md;
+
+    p{
+      margin-top: 4px;
+      @apply text-heading-s text-text-secondary
+    }
   }
 }
 
 .checkpoint-connect {
-  height: 50px;
-  border-left: 1px solid #d8d8d8;
-  margin-left: 10px;
-}
-
-@screen dt {
-  .checkpoint-wrap {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  height: 45px;
+  margin-left: 12px;
+  @apply border-l border-solid border-border;
 }

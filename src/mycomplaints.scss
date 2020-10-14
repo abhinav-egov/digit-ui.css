@@ -1,8 +1,8 @@
 .my-complaints-card {
-  @apply bg-white m-sm pt-md  pl-md pb-lg pr-12 shadow-card;
+  @apply bg-white m-sm pt-md pl-md pb-lg pr-md shadow-card;
 
   p{
-    @apply block text-1821 text-commentblack;
+    @apply block text-caption-m text-text-primary;
   }
 
 }
@@ -12,9 +12,10 @@
 .my-complaints-status-wrap {
   height: 30px;
   padding-bottom: 8px;
+  width: 100%;
 
   header {
-    @apply font-medium text-2024 float-left;
+    @apply font-medium text-legend float-left;
   }
 
   p {
@@ -26,13 +27,7 @@
   }
   
   p {
-    @apply text-2024 text-statusred text-center bg-pink float-right;
-  }
-}
-
-@screen mb {
-  .my-complaints-status-wrap {
-    @apply w-full;
+    @apply text-legend text-error text-center bg-grey-dark float-right;
   }
 }
 
@@ -45,7 +40,7 @@
 /* date and calender img */
 
 .my-complaints-date-wrap {
-  @apply h-6 mb-19;
+  @apply h-6 mb-lg;
 
 
   img {
@@ -53,7 +48,7 @@
   }
 
   label {
-    @apply text-1619 text-headerblack align-middle pl-sm;
+    @apply text-caption-m text-text-primary align-middle pl-sm;
   }
 }
 
@@ -64,21 +59,17 @@
 }
 
 .my-complaints-number-wrap {
-  @apply mb-19;
+  @apply mb-lg;
 
   label {
-    @apply block  text-2024;
+    @apply block text-legend;
   }
   header {
-    @apply block font-medium text-2024;
+    @apply block font-medium text-legend;
   }
 }
 
 /* comment */
-
-@screen mb {
-  
-}
 
 @screen dt {
   .my-complaints-card {

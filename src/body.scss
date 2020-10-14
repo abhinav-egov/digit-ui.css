@@ -1,29 +1,55 @@
-body {
-  @apply bg-bggrey;
+.body-container {
+  @apply bg-grey-bg;
 }
 
+.navbar {
+  @apply text-white bg-secondary p-md w-full;
+}
+/* .navbar-header{
+    @apply text-navbarheader float-left px-sm
+}
+
+.navbar-subheader{
+    @apply font-light px-sm border-solid border-l border-white border-opacity-100
+}*/
+
+
 .h1 {
-  @apply font-rc text-h1 text-headerblack mx-md font-bold;
+  @apply font-rc text-heading-xl text-text-primary font-bold mb-md ml-md;
 }
 
 .link-label {
-  @apply text-lightblue text-1619 underline mx-md;
+  @apply block text-link text-link-normal mb-md ml-md;
+
+  &:hover{
+    @apply text-link-hover
+  }
 }
 
 .back-btn {
-  @apply mx-sm border-solid border-b border-black float-left text-black font-rc pr-5;
+  width: fit-content;
+  @apply block border-solid border-b border-text-primary font-rc text-text-primary text-text-btn ml-sm mb-md;
 
   label{
-    margin-right: 7.5px;
-    font-size: 10px;
-  }
-
-  label{
-    @apply block float-left align-middle;
+    @apply inline mr-sm align-middle;
   }
 
   p{
-    @apply float-right text-1619;
+    @apply inline float-right;
+  }
+
+}
+
+.back-btn2{
+  width: fit-content;
+  @apply flex border-solid border-b border-text-primary font-rc text-text-primary text-text-btn ml-sm mb-md;
+
+  img{
+    @apply flex 
+  }
+
+  p{
+    @apply flex
   }
 
 }
@@ -31,10 +57,25 @@ body {
 @screen dt{
   
   .app-container{
-    @apply mx-160 font-regular
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .h1 {
+    margin-left: 0;
+    @apply text-heading-xl-dt
+  }
+
+  .link-label{
+    margin-left:0;
   }
 
   .back-btn {
-    @apply mx-0;
+    margin-left: 0;
+  }
+
+  .back-btn2 {
+    margin-left: 0;
   }
 }

@@ -11,7 +11,7 @@
 
   </head>
 
-  <body>
+  <body class="body-container">
     <div class="navbar">
       <img src="../img/msevalogo.png" >
       <!-- Logo png used may switch to html -->
@@ -24,84 +24,103 @@
       <label class="link-label">Property Tax</label>
 
       <div class="back-btn">
-        <label class="back-btn-pointer">&#x25c4</label>
+        <label>&#x25c4</label>
         <p>Back</p>
       </div>
 
-      <!-- card container    -->
+      <div class="back-btn2">
+        <img src="../svg/arrowleft.svg"/>
+        <p>Back</p>
+      </div>
+
+      <!-- card container   -->
       <div class="card">
-        <label class="card-selected-label">Garbage</label>
+        <label class="card-caption">Garbage</label>
         <header class="card-header">Choose Complaint Type</header>
-        <p class="card-text">Select option realted to your complaint from the list given below. If the complaint type you are looking for is not listed select others</p>
+        <p class="card-text">Select option related to your complaint from the list given below. If the complaint type you are looking for is not listed select others</p>
         
         <!-- radio select option  -->
-          <div class="card-radio-wrap">
-            <span class="card-radio-btn-wrap">
-              <input class="card-radio-btn" type="radio" value="streetlights" />
-              <span class="card-radio-btn-checkmark"></span>
+        <h2 class="card-label">Moholla *</h2>
+          <div class="radio-wrap">
+            <div>
+            <span class="radio-btn-wrap">
+              <input class="radio-btn" type="radio" value="streetlights" />
+              <span class="radio-btn-checkmark"></span>
             </span>
-            <label class="card-radio-label">Streetlights</label>
+            <label>Streetlights</label>
+            </div>
+            <div>
+              <span class="radio-btn-wrap">
+                <input class="radio-btn" type="radio" value="streetlights" />
+                <span class="radio-btn-checkmark"></span>
+              </span>
+              <label>Streetlights</label>
+            </div>
           </div>
 
+          <h2 class="card-label">City *</h2>
+          <h2 class="card-label-error">Enter City</h2>
         <!-- dropdown select option  -->
-          <div class="card-select-wrap">
-            <label class="card-select-label">City *</label>
-            <label class="card-select-label-error">Enter City</label>
-            <select class="card-select-dropdown">
-              <option class="card-select-dropdown-option">Ahmedabad</option>
-              <option class="card-select-dropdown-option">Banglore</option>
-              <option class="card-select-dropdown-option">Amritsar</option>
-              <option class="card-select-dropdown-option">New Delhi</option>
-            </select>
+          <div class="select-wrap">
+            <div class="select">
+              <p>Banglore</p>
+              <img src="../svg/arrowdown.svg"/>
+            </div>
+            <div class="options-card">
+              <p>Ahmedabad</p>
+              <p>Banglore</p>
+              <p>Amritsar</p>
+              <p>New Delhi</p>
+            </div>
           </div>
+
+          <!-- <select class="select">
+            <option>Ahmedabad</option>
+            <option>Banglore</option>
+            <option>Amritsar</option>
+            <option>New Delhi</option>
+          </select> -->
+
 
         <!-- text input fields and areas -->
-          <input type="text" class="card-textinput"/>
-          <input type="text" class="card-textinput-error"/>
+          <input type="text" class="card-input"/>
+          <input type="text" class="card-input-error"/>
           <textarea class="card-textarea"></textarea>
 
         <!-- upload components -->
           <div class="upload-wrap">
-            <img src="../img/camera.png" class="upload-camera-img"> 
+            <img src="../svg/camera.svg"> 
           </div>
 
         <!-- multi image upload  -->
-          <div class="upload-wrap">
-            <div class="upload-camera-img-mini-wrap">
-              <img src="../svg/close.svg" class="upload-camera-img-mini-delete"/>
-              <img src="./garbage.webp" class="upload-img-mini">
+          <div class="multi-upload-wrap">
+            <div>
+              <img src="../svg/close.svg" class="delete"/>
+              <img src="./garbage.webp"/>
             </div>
-            <div class="upload-camera-img-mini-wrap">  
-              <img src="../svg/close.svg" class="upload-camera-img-mini-delete"/>
-              <img src="./garbage.webp" class="upload-img-mini">
+            <div>  
+              <img src="../svg/close.svg" class="delete"/>
+              <img src="./garbage.webp"/>
             </div>
-            <div class="upload-camera-img-mini-wrap">
-              <img src="../svg/close.svg" class="upload-camera-img-mini-delete"/>
-              <img src="../img/camera.png" class="upload-camera-img-mini">
+            <div class="upload-img-container">
+              <img src="../svg/camera.svg" class="upload-camera-img"/>
             </div>
           </div>
 
         <!-- successfull submittion card  -->
-          <div class="banner-completed-wrap">
+          <div class="success-wrap">
             <header>Complaint Submitted</header>
-            <div class="banner-completed-svg-wrap">
+            <div>
               <img src="../svg/success.svg"/>
-              <div class="complaintnumber-label-wrap">
-                <label>Complaint No.</label>
-                <p>02/09/2020/051705</p>
-              </div>
+              <h2>Complaint No.</h2>
+              <p>02/09/2020/051705</p>
             </div>
           </div>
 
         <!-- complaint error card -->
-          <div class="banner-error-wrap">
+          <div class="error-wrap">
             <header>Complaint Not Submitted</header>
-            <img src="../svg/error.svg" alt="">
-          </div>
-
-        <!-- description text  -->
-          <div class="description-wrap">
-            <p class="description-text">The notification along with complaint number is sent to your registered mobile number. You can track the complaint status using mobile or web app.</p>
+            <img src="../svg/error2.svg" alt="">
           </div>
           
         <!-- submit / next button bar -->
@@ -113,7 +132,7 @@
 
 
       <!-- my complaint section  -->
-        <div class="my-complaints-card">
+        <div class="card">
           <div class="my-complaints-status-wrap">
             <header>Burning of Garbage</header>
             <p>OPEN</p>
@@ -133,38 +152,38 @@
         </div>
 
       <!-- complaint summary -->
-        <div class="complaint-sum-card">
-          <header>Burning of Garbage</header>
+        <div class="card">
+          <header class="card-sub-header">Burning of Garbage</header>
           <div class="data-table"> 
-            <div class="data-table-row">
-              <label>Complaint No.</label>
+            <div>
+              <h2>Complaint No.</h2>
               <p>02/09/2020/051705</p>
             </div>
-            <div class="data-table-row">
-              <label>Complaint Status</label>
+            <div>
+              <h2>Complaint Status</h2>
               <p>Filed</p>
             </div>
-            <div class="data-table-row">
-              <label>Filed Date</label>
+            <div>
+              <h2>Filed Date</h2>
               <p>1-Aug-2020</p>
             </div>
-            <div class="data-table-row-last">
-              <label>Address</label>
+            <div class="row-last">
+              <h2>Address</h2>
               <p>Back side Post Office Patiala Road Ajit Nagar Amritsar</p>
             </div>
           </div>
-          <div class="display-photos-wrap">
-            <img src="./garbage.webp" class="display-photo">
-            <img src="./garbage.webp" class="display-photo">
-            <img src="./garbage.webp" class="display-photo-last">
+          <div class="photos-wrap">
+            <img src="./garbage.webp">
+            <img src="./garbage.webp">
+            <img src="./garbage.webp" class="last">
           </div>
         </div>
 
       <!-- complaint timeline -->
-      <div class="checkpoint-wrap">
-        <h1>Complaint Timeline</h1>
+      <div class="card">
+        <h2 class="card-sub-header">Complaint Timeline</h2>
         <div class="checkpoint-done">
-          <label></label>
+          <h2></h2>
           <header>Pending for Assignment</header>
         </div>
         
@@ -172,75 +191,57 @@
         <div class="checkpoint-connect"></div>
 
         <div class="checkpoint">
-          <label></label>
-          <header>Complaint Filed</header>
+          <h2></h2>
+          <header>Complaint Filed
+            <p>12/08/2020</p>
+          </header>
         </div>
       </div>
         
       <!-- checkbox  -->
-      <div class="card-feedback-form-wrap">
-        <p class="card-text">How would you rate your experience with us?</p>
+      <div class="card">
+        <p class="card-label">How would you rate your experience with us?</p>
         <div class="rating-star-wrap">
-          <img src="../svg/starfilled.svg" class="rating-star" alt="">
-          <img src="../svg/starfilled.svg" class="rating-star" alt="">
-          <img src="../svg/starfilled.svg" class="rating-star" alt="">
-          <img src="../svg/starfilled.svg" class="rating-star" alt="">
-          <img src="../svg/starempty.svg" class="rating-star" alt="">
+          <img src="../svg/starfilled.svg" alt="">
+          <img src="../svg/starfilled.svg" alt="">
+          <img src="../svg/starfilled.svg" alt="">
+          <img src="../svg/starfilled.svg" alt="">
+          <img src="../svg/starempty.svg" alt="">
         </div>
-        <div class="card-feedback-question-wrap">
-          <p class="card-feedback-question">What was Good?</p>
-        </div>
-        <div class="card-checkbox-wrap">
-          <div class="checkbox-wrap">
-            <input type="checkbox" class="checkbox">
-            <label class="custom-checkbox">
-              <!-- <img src="./check.png" class="checkbox-check"> -->
-              <img src="../svg/check.svg" class="checkbox-check" alt="">
-            </label>
-            <label class="checkbox-label">Service</label>
-          </div>
+        <p class="card-label">What was Good?</p>
+        <div class="checkbox-wrap">
+          <input type="checkbox">
+          <p class="custom-checkbox">
+            <img src="../svg/check.svg" alt="">
+          </p>
+          <p class="label">Service</p>
         </div>
       </div>
 
       <!-- otp verification  -->
       <div class="card">
-        <div class="input-otp-label-wrap">
-          <p class="input-otp-label">Enter the OTP sent to 
-            <span class="input-otp-label-mob">
-              +91 - 9876453444
-            </span>
-          </p>
-        </div>
+        <p class="card-text">Enter the OTP sent to +91 - 9876453444</p>
         <div class="input-otp-wrap">
-          <input type="number" max="1" class="input-otp"/>
-          <input type="number" max="1" class="input-otp"/>
-          <input type="number" max="1" class="input-otp"/>
-          <input type="number" max="1" class="input-otp"/>
+          <input type="number" max="1"/>
+          <input type="number" max="1"/>
+          <input type="number" max="1"/>
+          <input type="number" max="1"/>
         </div>
-        <div class="input-otp-desc-wrap">
-          <p class="input-otp-desc">
-            Request another OTP in 
-            <span class="input-otp-desc-time">
-              25
-            </span> seconds
-          </p>
-        </div>
-        <div class="input-otp-resend-wrap">
-          <p class="input-otp-resend">Resend OTP</p>
-        </div>
+        <p class="card-text">
+          Request another OTP in 25 seconds
+        </p>
+        <p class="card-text-button">RESEND</p>
       </div>
 
       <!-- warnings  -->
       <div class="card">
-        <div class="warning-photo-upload-wrap">
-          <label class="warning-photo-upload-message">There is a problem</label>
-          <label class="warning-photo-upload-error">Max 3 complaint photos allowed</label>
+        <div class="error-message-wrap">
+          <h2>There is a problem</h2>
+          <p>Max 3 complaint photos allowed</p>
         </div>
 
-        <div class="warning-instruction-wrap">
-          <p class="warning-instruction">Click on the icon below to upload the complaint photos as evidence. You can capture photos directly  through your camera or upload from your Gallery. 
-            If you do not have complaint photo, you can skip the continue for next step.</p>
-        </div>
+        <p class="card-text">Click on the icon below to upload the complaint photos as evidence. You can capture photos directly  through your camera or upload from your Gallery. 
+          If you do not have complaint photo, you can skip the continue for next step.</p>
       </div>
 
       <!-- map  -->

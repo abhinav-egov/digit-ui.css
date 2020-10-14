@@ -1,34 +1,63 @@
-.card-select-wrap {
-}
+/*.select {
 
-.card-select-label {
-  @apply block font-bold text-label text-optionblack font-bold;
+  @apply mb-lg block border-2 border-input-border border-solid outline-none rounded-none w-full h-10 bg-white leading-10;
+    
+  option {
+    @apply h-10 text-caption-m text-text-primary align-top text-left;
+  }
+    
+  }
+  
+.select:active {
+  @apply border-focus border-2;
 }
-
-.card-select-label-error {
-  @apply block font-bold text-label text-statusred font-bold;
+  
+@screen dt {
+  .select {
+    @apply w-2/5;
+  }
 }
+*/
 
-.card-select-dropdown {
-  @apply block border-2 border-radioblack border-solid rounded-none w-full bg-white mb-lg mt-sm leading-10   text-optionblack text-selectedoption;
-}
+.select-wrap{
 
-.card-select-dropdown:active {
-  @apply border-orange border-4;
-}
+  @apply mb-lg;
 
-.card-select-dropdown-option {
-  @apply text-optionblack text-selectedoption align-top text-left;
-}
+  .select{
+    @apply block w-full h-10 border-2 border-solid border-input-border;
+    
+    p{
+      @apply text-caption-m text-text-primary float-left ml-sm;
+    }
 
-@screen mb {
-  .card-select-dropdown {
-    @apply w-full;
+    p{
+      padding-top: 9px;
+    }
+
+    img{
+      @apply float-right h-6 w-6 mt-sm mr-sm;
+    }
+  }
+
+  .options-card{
+    @apply mt-xs w-full shadow-card;
+    
+    p{
+      @apply w-full h-12 pl-sm text-text-primary text-caption-m;
+
+      &:hover{
+        @apply bg-grey-mid;
+      }
+    }
+
+    p{
+      padding-top: 14px;
+    }
   }
 }
 
-@screen dt {
-  .card-select-dropdown {
-    @apply w-2/5;
+@screen dt{
+  .select-wrap{
+    width: 480px;
   }
 }

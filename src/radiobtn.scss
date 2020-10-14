@@ -1,43 +1,48 @@
-.card-radio-wrap {
-  @apply my-sm block leading-10;
-}
+.radio-wrap {
+  @apply my-sm block leading-10 mb-lg;
 
-.card-radio-btn-wrap {
-  @apply block float-left relative;
-}
+  div{
+    @apply block mb-md
+  }
 
-.card-radio-btn {
-  @apply opacity-0 absolute cursor-pointer h-10 w-10;
-}
+  .radio-btn-wrap {
+    @apply block float-left relative;
+  }
 
-.card-radio-btn-checkmark {
-  @apply h-10 w-10 border-2 border-radioblack border-solid rounded-full block;
-}
+  .radio-btn {
+    @apply opacity-0 absolute cursor-pointer h-10 w-10;
+  }
 
-.card-radio-label {
-  @apply font-rc text-optionblack text-label my-radiobtnx ml-radiobtnleft;
-}
+  .radio-btn-checkmark {
+    @apply h-10 w-10 border-2 border-input-border border-solid rounded-full block;
+  }
 
-.card-radio-btn-wrap:hover input ~ .card-radio-btn-checkmark {
-  @apply shadow-radiobtn rounded-full;
-}
+  label{
+    @apply text-text-primary text-caption-m ml-md;
+  }
 
-.card-radio-btn:hover ~ .card-radio-btn-checkmark {
-  @apply border-orange;
-}
+  .radio-btn-wrap:hover input ~ .radio-btn-checkmark {
+    @apply shadow-radiobtn rounded-full;
+  }
 
-.card-radio-btn-checkmark:after {
-  content: "";
-}
+  .radio-btn:hover ~ .radio-btn-checkmark {
+    @apply border-primary-main;
+  }
 
-.card-radio-btn:hover ~ .card-radio-btn-checkmark {
-  @apply border-orange;
-}
+  .radio-btn-checkmark:after {
+    content: "";
+  }
 
-.card-radio-btn-wrap input:checked ~ .card-radio-btn-checkmark {
-  @apply border-orange;
-}
+  .radio-btn:hover ~ .radio-btn-checkmark {
+    @apply border-primary-main;
+  }
 
-.card-radio-btn-wrap input:checked ~ .card-radio-btn-checkmark:after {
-  @apply block bg-orange h-5 w-5 rounded-full absolute top-10 left-10;
+  .radio-btn-wrap input:checked ~ .radio-btn-checkmark {
+    @apply border-primary-main;
+  }
+
+  .radio-btn-wrap input:checked ~ .radio-btn-checkmark:after {
+    @apply block bg-primary-main h-5 w-5 rounded-full absolute top-10 left-10;
+  }
+
 }
