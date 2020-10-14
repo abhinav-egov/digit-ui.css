@@ -1,0 +1,80 @@
+/*.select {
+
+  @apply mb-lg block border-2 border-input-border border-solid outline-none rounded-none w-full h-10 bg-white leading-10;
+    
+  option {
+    @apply h-10 text-caption-m text-text-primary align-top text-left;
+  }
+    
+  }
+  
+.select:active {
+  @apply border-focus border-2;
+}
+  
+@screen dt {
+  .select {
+    @apply w-2/5;
+  }
+}
+*/
+
+.select-wrap{
+
+  @apply mb-lg relative;
+
+  .select{
+    @apply block w-full h-10 border-2 border-solid border-input-border;
+    
+    p{
+      @apply text-caption-m text-text-primary float-left ml-sm;
+    }
+
+    p{
+      padding-top: 9px;
+    }
+
+    img{
+      @apply float-right h-6 w-6 mt-sm mr-sm;
+    }
+  }
+
+  .select-active{
+    @apply block w-full h-10 border-2 border-solid border-primary-main;
+    
+    p{
+      @apply text-caption-m text-text-primary float-left ml-sm;
+    }
+
+    p{
+      padding-top: 9px;
+    }
+
+    img{
+      @apply float-right h-6 w-6 mt-sm mr-sm;
+    }
+  }
+
+  .options-card{
+    width: 100% !important;
+    @apply absolute z-10 mt-xs bg-white shadow-card;
+    
+    p{
+      @apply w-full h-12 pl-sm text-text-primary text-caption-m;
+
+      &:hover{
+        @apply bg-grey-mid;
+      }
+    }
+
+    p{
+      padding-top: 14px;
+    }
+  }
+}
+
+@screen dt{
+  .select-wrap{
+    width: 480px;
+  }
+}
