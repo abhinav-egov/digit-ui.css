@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>@egovernments/digit-ui.css</title>
+    <!-- map script  -->
+    <script src="./map.js"></script>   
+    <!-- all files at https://unpkg.com/browse/@egovernments/digit-ui.css/ -->
+    <!-- css prod path https://unpkg.com/@egovernments/digit-ui.css/dist/index.min.css -->
+    <link href="index.css" rel="stylesheet">
+
+  </head>
+
+  <body class="body-container">
+    <div class="navbar">
+      <img src="../img/msevalogo.png" >
+      <!-- Logo png used may switch to html -->
+      <!-- <header class="navbar-header">mSeva</header>
+        <label class="navbar-subheader">Demo</label> -->
+    </div>
+    <div class="app-container">
+      <header class="h1">Quick Pay</header>
+
+      <label class="link-label">Property Tax</label>
+
+      <div class="back-btn">
+        <label>&#x25c4</label>
+        <p>Back</p>
+      </div>
+
+      <div class="back-btn2">
+        <img src="../svg/arrowleft.svg"/>
+        <p>Back</p>
+      </div>
+
+      <!-- card container   -->
+      <div class="card">
+        <label class="card-caption">Garbage</label>
+        <header class="card-header">Choose Complaint Type</header>
+        <p class="card-text">Select option related to your complaint from the list given below. If the complaint type you are looking for is not listed select others</p>
+        
+        <!-- radio select option  -->
+        <h2 class="card-label">Moholla *</h2>
+          <div class="radio-wrap">
+            <div>
+            <span class="radio-btn-wrap">
+              <input class="radio-btn" type="radio" value="streetlights" />
+              <span class="radio-btn-checkmark"></span>
+            </span>
+            <label>Streetlights</label>
+            </div>
+            <div>
+              <span class="radio-btn-wrap">
+                <input class="radio-btn" type="radio" value="streetlights" />
+                <span class="radio-btn-checkmark"></span>
+              </span>
+              <label>Streetlights</label>
+            </div>
+          </div>
+
+          <h2 class="card-label">City *</h2>
+          <h2 class="card-label-error">Enter City</h2>
+        <!-- dropdown select option  -->
+          <div class="select-wrap">
+            <div class="select">
+              <p>Banglore</p>
+              <img src="../svg/arrowdown.svg"/>
+            </div>
+            <div class="options-card">
+              <p>Ahmedabad</p>
+              <p>Banglore</p>
+              <p>Amritsar</p>
+              <p>New Delhi</p>
+            </div>
+          </div>
+
+          <!-- <select class="select">
+            <option>Ahmedabad</option>
+            <option>Banglore</option>
+            <option>Amritsar</option>
+            <option>New Delhi</option>
+          </select> -->
+
+
+        <!-- text input fields and areas -->
+          <input type="text" class="card-input"/>
+          <input type="text" class="card-input-error"/>
+          <textarea class="card-textarea"></textarea>
+
+        <!-- upload components -->
+          <div class="upload-wrap">
+            <img src="../svg/camera.svg"> 
+          </div>
+
+        <!-- multi image upload  -->
+          <div class="multi-upload-wrap">
+            <div>
+              <img src="../svg/close.svg" class="delete"/>
+              <img src="./garbage.webp"/>
+            </div>
+            <div>  
+              <img src="../svg/close.svg" class="delete"/>
+              <img src="./garbage.webp"/>
+            </div>
+            <div class="upload-img-container">
+              <img src="../svg/camera.svg" class="upload-camera-img"/>
+            </div>
+          </div>
+
+        <!-- successfull submittion card  -->
+          <div class="success-wrap">
+            <header>Complaint Submitted</header>
+            <div>
+              <img src="../svg/success.svg"/>
+              <h2>Complaint No.</h2>
+              <p>02/09/2020/051705</p>
+            </div>
+          </div>
+
+        <!-- complaint error card -->
+          <div class="error-wrap">
+            <header>Complaint Not Submitted</header>
+            <img src="../svg/error2.svg" alt="">
+          </div>
+          
+        <!-- submit / next button bar -->
+          <div class="submit-bar">
+            <header class="submit-header">Next</header>
+          </div>
+
+      </div>
+
+
+      <!-- my complaint section  -->
+        <div class="card">
+          <div class="my-complaints-status-wrap">
+            <header>Burning of Garbage</header>
+            <p>OPEN</p>
+          </div>
+
+          <div class="my-complaints-date-wrap">
+            <img src="../img/calender.png">
+            <label>2-Aug-2020</label>
+          </div>
+          
+          <div class="my-complaints-number-wrap">
+            <label>Complaint No.</label>
+            <header>02/09/2020/051705</header>
+          </div>
+          
+          <p>Complaint Pending for Assignment</p>
+        </div>
+
+      <!-- complaint summary -->
+        <div class="card">
+          <header class="card-sub-header">Burning of Garbage</header>
+          <div class="data-table"> 
+            <div>
+              <h2>Complaint No.</h2>
+              <p>02/09/2020/051705</p>
+            </div>
+            <div>
+              <h2>Complaint Status</h2>
+              <p>Filed</p>
+            </div>
+            <div>
+              <h2>Filed Date</h2>
+              <p>1-Aug-2020</p>
+            </div>
+            <div class="row-last">
+              <h2>Address</h2>
+              <p>Back side Post Office Patiala Road Ajit Nagar Amritsar</p>
+            </div>
+          </div>
+          <div class="photos-wrap">
+            <img src="./garbage.webp">
+            <img src="./garbage.webp">
+            <img src="./garbage.webp" class="last">
+          </div>
+        </div>
+
+      <!-- complaint timeline -->
+      <div class="card">
+        <h2 class="card-sub-header">Complaint Timeline</h2>
+        <div class="checkpoint-done">
+          <h2></h2>
+          <header>Pending for Assignment</header>
+        </div>
+        
+        <!-- line connecting dots -->
+        <div class="checkpoint-connect"></div>
+
+        <div class="checkpoint">
+          <h2></h2>
+          <header>Complaint Filed
+            <p>12/08/2020</p>
+          </header>
+        </div>
+      </div>
+        
+      <!-- checkbox  -->
+      <div class="card">
+        <p class="card-label">How would you rate your experience with us?</p>
+        <div class="rating-star-wrap">
+          <img src="../svg/starfilled.svg" alt="">
+          <img src="../svg/starfilled.svg" alt="">
+          <img src="../svg/starfilled.svg" alt="">
+          <img src="../svg/starfilled.svg" alt="">
+          <img src="../svg/starempty.svg" alt="">
+        </div>
+        <p class="card-label">What was Good?</p>
+        <div class="checkbox-wrap">
+          <input type="checkbox">
+          <p class="custom-checkbox">
+            <img src="../svg/check.svg" alt="">
+          </p>
+          <p class="label">Service</p>
+        </div>
+      </div>
+
+      <!-- otp verification  -->
+      <div class="card">
+        <p class="card-text">Enter the OTP sent to +91 - 9876453444</p>
+        <div class="input-otp-wrap">
+          <input type="number" max="1"/>
+          <input type="number" max="1"/>
+          <input type="number" max="1"/>
+          <input type="number" max="1"/>
+        </div>
+        <p class="card-text">
+          Request another OTP in 25 seconds
+        </p>
+        <p class="card-text-button">RESEND</p>
+      </div>
+
+      <!-- warnings  -->
+      <div class="card">
+        <div class="error-message-wrap">
+          <h2>There is a problem</h2>
+          <p>Max 3 complaint photos allowed</p>
+        </div>
+
+        <p class="card-text">Click on the icon below to upload the complaint photos as evidence. You can capture photos directly  through your camera or upload from your Gallery. 
+          If you do not have complaint photo, you can skip the continue for next step.</p>
+      </div>
+
+      <!-- map  -->
+      <div class="card">
+        <header class="card-header">Pin Complaint Location</header>
+        <p class="card-text">Click and hold to drop the pin to complaint location. If you are not able to pin the location you can skip the continue for next step.</p>
+        <div class="map-wrap">
+          <div class="map-search-bar-wrap">
+            <img src="../svg/searchicon.svg" class="map-search-bar-icon" alt="">
+            <input id="pac-input" class="map-search-bar" type="text" placeholder="Search Address"/>
+          </div>
+          <div id="map" class="map" ></div>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
