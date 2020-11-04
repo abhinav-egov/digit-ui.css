@@ -15,6 +15,10 @@
 
   .card-text {
     @apply text-text-secondary text-body-l align-middle text-left mb-lg;
+
+    span{
+      @apply text-text-primary
+    }
   }
 
   .card-text-button{

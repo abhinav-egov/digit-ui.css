@@ -16,6 +16,10 @@
     img {
       @apply opacity-0;
     }
+
+    svg{
+      @apply opacity-0;
+    }
   }
 
   input:checked ~ .custom-checkbox {
@@ -26,10 +30,14 @@
   input:checked ~ .custom-checkbox img{
     @apply opacity-100
   }
+
+  input:checked ~ .custom-checkbox svg{
+    @apply opacity-100
+  }
   
   .label {
     margin-left: 56px;
-    @apply text-caption-m text-text-primary;
+    @apply text-form-field text-text-primary;
   }
 }
 

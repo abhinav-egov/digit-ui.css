@@ -1,8 +1,8 @@
 .input-otp-wrap {
-  @apply mb-md;
+  @apply mb-lg;
 
   input {
-    @apply border-2 border-solid border-input-border outline-none h-10 w-10 text-center mr-sm;
+    @apply border-2 border-solid border-input-border outline-none h-10 w-10 text-form-field text-text-primary text-center mr-md;
   }
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {

@@ -1,0 +1,14 @@
+.date-wrap{
+  @apply flex mb-md;
+  img{
+    @apply h-6 w-6;
+  }
+
+  svg{
+    @apply h-6 w-6;
+  }
+
+  p{
+    @apply text-text-secondary text-body-l pl-sm;
+  }
+}
