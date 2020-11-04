@@ -2,15 +2,20 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 # dependencies
 node_modules
+
 # builds
 build
 dist
 .rpt2_cache
+
 # dev
 dev.css
 index.css
 index.compat.css
 index.min.css
+example/img
+example/svg
+
 # misc
 .DS_Store
 .env
