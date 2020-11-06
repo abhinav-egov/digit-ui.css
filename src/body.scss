@@ -3,7 +3,7 @@
 }
 
 .navbar {
-  @apply text-white bg-secondary p-md w-full;
+  @apply text-white bg-secondary p-md w-full mb-md;
 }
 /* .navbar-header{
     @apply text-navbarheader float-left px-sm
@@ -28,7 +28,7 @@
 
 .back-btn {
   width: fit-content;
-  @apply block border-solid border-b border-text-primary font-rc text-text-primary text-text-btn ml-sm mb-md;
+  @apply block border-solid border-b border-text-primary font-rc text-text-primary text-text-btn ml-sm mt-md;
 
   label{
     @apply inline mr-sm align-middle;

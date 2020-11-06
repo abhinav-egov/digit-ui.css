@@ -1,14 +1,18 @@
 .date-wrap{
   @apply flex mb-md;
-  img{
-    @apply h-6 w-6;
-  }
 
-  svg{
-    @apply h-6 w-6;
+  img, svg{
+    height: 22px;
+    width: 20px;
   }
 
   p{
-    @apply text-text-secondary text-body-l pl-sm;
+    @apply text-text-primary text-body-l pl-sm;
+  }
+}
+
+@screen dt{
+  p{
+    @apply text-body-l-dt
   }
 }
