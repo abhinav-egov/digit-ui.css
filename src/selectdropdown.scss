@@ -26,6 +26,11 @@
   .select{
     @apply block w-full h-10 border-2 border-solid border-input-border;
     
+    input[type="text"]{
+      width: calc( 100% - 32px );
+      @apply h-full outline-none text-text-primary text-form-field pl-sm
+    }
+
     p{
       @apply text-form-field text-text-primary float-left ml-sm;
     }
@@ -46,6 +51,11 @@
   .select-active{
     @apply block w-full h-10 border-2 border-solid border-primary-main;
     
+    input[type="text"]{
+      width: calc( 100% - 32px );
+      @apply h-full outline-none text-text-primary text-form-field pl-sm
+    }
+
     p{
       @apply text-form-field text-text-primary float-left ml-sm;
     }
@@ -65,7 +75,8 @@
 
   .options-card{
     width: 100% !important;
-    @apply absolute z-10 mt-xs bg-white shadow-card;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    @apply absolute z-10 mt-xs bg-white;
     
     p{
       @apply w-full h-12 pl-sm text-text-primary text-form-field;

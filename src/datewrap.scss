@@ -12,7 +12,9 @@
 }
 
 @screen dt{
-  p{
-    @apply text-body-l-dt
+  .date-wrap{
+    p{
+      @apply text-body-l-dt
+    }
   }
 }
