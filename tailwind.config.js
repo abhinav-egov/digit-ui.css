@@ -38,8 +38,8 @@ module.exports = {
       white: "#FFFFFF",
     },
     fontFamily: {
-      sans: ["Roboto", "Open Sans", "sans-serif"],
-      rc: ['"Roboto Condensed"'],
+      sans: ["Roboto", "sans-serif"],
+      rc: ['"Roboto Condensed"', "sans-serif"],
     },
     fontSize: {
       "heading-xl-dt": ["48px", "56px"],
