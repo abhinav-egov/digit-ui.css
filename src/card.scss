@@ -15,6 +15,14 @@
 
   .card-text {
     @apply text-text-secondary text-body-l align-middle text-left mb-lg;
+
+    span{
+      @apply text-text-primary
+    }
+  }
+
+  .card-text-primary{
+    @apply text-text-primary text-body-l
   }
 
   .card-text-button{
@@ -27,6 +35,10 @@
 
   .card-label-error {
     @apply block font-bold text-legend text-error mb-md;
+  }
+
+  .card-link{
+    @apply block text-center text-link text-link-normal mt-md
   }
 }
 
@@ -63,8 +75,12 @@
       @apply text-caption-xl-dt
     }
 
-    .card-text {
+    .card-text, .card-text-primary{
       @apply text-body-l-dt
+    }
+    
+    .card-link{
+      @apply text-left
     }
 
   }
