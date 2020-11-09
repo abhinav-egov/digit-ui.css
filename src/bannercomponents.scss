@@ -15,6 +15,10 @@
     height: 42px;
     width: 46px;
   }
+
+  input {
+    @apply absolute w-full h-full opacity-0 top-0;
+  }
 }
 
 .multi-upload-wrap{
@@ -48,11 +52,15 @@
       padding-top: calc(33% - 21px);
     }
 
-    svg{
+    svg {
       margin-left: auto;
       margin-right: auto;
       top: calc( 50% - 21px);
       position: relative;
+    }
+
+    input {
+      @apply absolute w-full h-full opacity-0 top-0;
     }
   
   }
