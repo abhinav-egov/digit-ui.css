@@ -26,7 +26,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
     - run: yarn build
-    - name: Publish
-      run: yarn publish-packages
+    - run: yarn workspace @egovernments/digit-ui.css publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH }}
