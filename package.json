@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "yarn run envTest && run-s build:**",
-    "publish-packages": "run-s publish:**",
+    "publish-packages": "yarn publish:css",
     "envTest": "node test.js",
     "build:css": "cd packages/css && yarn build:prod",
     "publish:css": "yarn workspace @egovernments/digit-ui.css publish --access public"
