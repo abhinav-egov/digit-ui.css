@@ -28,4 +28,4 @@ jobs:
     - run: yarn build
     - run: cd packages/css && npm publish --access public
       env:
-        NODE_AUTH_TOKEN: b5305ea1-b678-482f-a309-dd618610cfaa
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH }}
