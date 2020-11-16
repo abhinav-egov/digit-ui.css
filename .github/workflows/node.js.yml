@@ -29,3 +29,4 @@ jobs:
     - run: cd packages/css && npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH }}
+        NPM_TOKEN: ${{ secrets.NPM_AUTH }}
