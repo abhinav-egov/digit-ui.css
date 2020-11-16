@@ -26,6 +26,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
     - name: Build
-      run: yarn build --if-present
+      run: yarn build
       env:
         REPO_NAME: ${{ secrets.REPO_NAME }}
