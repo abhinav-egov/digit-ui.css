@@ -27,7 +27,7 @@ jobs:
         scope: "@egovernments"
     - run: yarn install
     - run: yarn build
-    - run: node test.js && cd packages/css && npm publish --access public
+    - run: node test.js && cd packages/css && npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH }}
         NPM_TOKEN: ${{ secrets.NPM_AUTH }}
