@@ -13,9 +13,10 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "yarn run envTest && run-s build:**",
+    "build": "yarn run envTest && run-s build:** publish:**",
     "envTest": "node test.js",
-    "build:css": "cd packages/css && yarn build:prod"
+    "build:css": "cd packages/css && yarn build:prod",
+    "publish:css": "yarn workspace @egovernments/digit-ui.css publish"
   },
   "devDependencies": {
     "husky": ">=4",
