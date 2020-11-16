@@ -13,6 +13,8 @@
     "node": ">=14"
   },
   "scripts": {
+    "build": "npm run envTest && npm build:**",
+    "envTest": "node test.js",
     "build:css": "cd packages/css && yarn build:prod"
   },
   "devDependencies": {
