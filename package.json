@@ -17,7 +17,7 @@
     "publish-packages": "run-s publish:**",
     "envTest": "node test.js",
     "build:css": "cd packages/css && yarn build:prod",
-    "publish:css": "yarn workspace @egovernments/digit-ui.css publish"
+    "publish:css": "yarn workspace @egovernments/digit-ui.css publish --access public"
   },
   "devDependencies": {
     "husky": ">=4",
