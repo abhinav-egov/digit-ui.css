@@ -10,7 +10,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=14"
+    "node": ">=10"
   },
   "scripts": {
     "build": "npm run envTest && npm run build:css",
