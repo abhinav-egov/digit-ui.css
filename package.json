@@ -13,7 +13,7 @@
     "node": ">=14"
   },
   "scripts": {
-    "build": "npm run envTest && npm build:**",
+    "build": "npm run envTest && npm run build:css",
     "envTest": "node test.js",
     "build:css": "cd packages/css && yarn build:prod"
   },
